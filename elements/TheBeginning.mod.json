@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "The Beginning",
-    "achievementDescription": "You received the recipes to become a chef",
+    "achievementDescription": "You received the recipes to become a chef!",
     "achievementIcon": {
       "value": "CUSTOM:Bigpizzaveneno"
     },
