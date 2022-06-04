@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:sugar"
+    },
+    "1": {
+      "item": "minecraft:potion"
+    },
+    "2": {
+      "item": "minecraft:melon_slice"
+    }
+  },
+  "result": {
+    "item": "server:cocktaildesandia",
+    "count": 1
+  }
+}

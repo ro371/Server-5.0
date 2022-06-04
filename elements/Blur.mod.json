@@ -1,0 +1,17 @@
+{
+  "_fv": 28,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "blur",
+    "name": "Blur",
+    "description": " Blur - Song 2",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:blursound"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

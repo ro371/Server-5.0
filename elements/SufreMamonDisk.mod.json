@@ -1,0 +1,17 @@
+{
+  "_fv": 28,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "sufre_mamon_devulveme_a_mi_chica_disk",
+    "name": "Sufre Mam�n ",
+    "description": "Sufre mam�n, devulveme a mi chica - Hombres G",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:sufremamon_disk"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

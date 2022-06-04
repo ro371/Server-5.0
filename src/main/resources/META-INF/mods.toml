@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="server"
+version="5.0"
+displayName="Cuspiland´s Mod"
+credits="Created using MCreator - https://mcreator.net/about"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/server-4-0"
+logoFile="logo.png"
+authors="THE_GLACIAL, MCreator"
+description='''
+Random and useful mod for you and your friends. Official Cuspiland´s mod
+'''
+
+[[dependencies.server]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

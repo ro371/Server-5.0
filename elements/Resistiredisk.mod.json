@@ -1,0 +1,17 @@
+{
+  "_fv": 28,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "resistiredisk",
+    "name": "Resistir�",
+    "description": "Resistir� 2020 - Sof�a Ellar",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:resistiresound"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

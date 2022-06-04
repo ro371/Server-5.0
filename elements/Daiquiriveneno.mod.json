@@ -1,0 +1,46 @@
+{
+  "_fv": 28,
+  "_type": "unknown",
+  "definition": {
+    "renderType": 0,
+    "texture": "daiquiri",
+    "customModelName": "Normal",
+    "name": "Daiquiriveneno",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 64,
+    "enchantability": 0,
+    "useDuration": 26,
+    "toolType": 0.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "DaiquiriVenenoFoodEaten"
+    },
+    "hasDispenseBehavior": false,
+    "isFood": true,
+    "nutritionalValue": 2,
+    "saturation": 0.1,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": true,
+    "animation": "drink"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "_fv": 28,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "desastredisk",
+    "name": "De sastre",
+    "description": "Sof�a Ellar - De Sastre",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:de_sastre"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

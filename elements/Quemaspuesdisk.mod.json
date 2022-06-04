@@ -1,0 +1,17 @@
+{
+  "_fv": 28,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "quemaspuesdisk",
+    "name": "Qu� m�s pues",
+    "description": "J Balvin x Maria Becerra - Qu� M�s Pues",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:quemaspues"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

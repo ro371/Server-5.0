@@ -1,0 +1,17 @@
+{
+  "_fv": 28,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "phineasdisk",
+    "name": "Ser� un d�a Fenomenal",
+    "description": "Phineas y Ferb - Ser� un d�a Fenomenal",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:phineasdisk"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:red_dye"
+    },
+    "3": {
+      "item": "minecraft:wheat"
+    },
+    "4": {
+      "item": "server:pizza_dough"
+    },
+    "5": {
+      "item": "minecraft:wheat"
+    },
+    "7": {
+      "item": "minecraft:wheat_seeds"
+    }
+  },
+  "result": {
+    "item": "server:medium_pizza",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "_fv": 28,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "rammstein",
+    "name": "Rammstein",
+    "description": " Rammstein - Deutschland",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:rammstein"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

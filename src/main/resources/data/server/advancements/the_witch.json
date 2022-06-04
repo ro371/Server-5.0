@@ -1,0 +1,56 @@
+{
+  "criteria": {
+    "the_witch": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "server:poisondrops"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1000
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5,
+    "recipes": [
+      "server:daiquirivenenorecipe",
+      "server:gintonicvenenorecipe",
+      "server:spaguettivenenorecipe",
+      "server:applepievenenorecipe",
+      "server:vasodeaguavenenorecipe",
+      "server:smallpizzavenenorecipe",
+      "server:mediumpizzavenenorecipe",
+      "server:bigpizzavenenorecipe",
+      "server:fishstickvenenorecipe",
+      "server:burnpoison",
+      "server:poison_dropsmake",
+      "server:poisondroprecipe",
+      "server:hotpotato_recipe",
+      "server:pastillarecipe",
+      "server:pastillahealrecipe",
+      "server:pastillavenomrecipe",
+      "server:pastillaflyrecipe",
+      "server:burnglobefish",
+      "server:greendye",
+      "server:poison_drop_craft_recipe",
+      "server:vaso_2venenorecipe",
+      "server:vaso_2venomrecipe",
+      "server:vasodeaguaflyvenomrecipe",
+      "server:vasodeaguaflyvenom_2",
+      "server:vasodeaguaflyvenomrecipe_3",
+      "server:manzanavenenorecipe",
+      "server:preso_armor_helmet_recipe",
+      "server:preso_armor_body_recipe",
+      "server:preso_armor_leggings_recipe",
+      "server:preso_armor_boots_recipe"
+    ]
+  },
+  "parent": "server:the_beginning"
+}

@@ -1,0 +1,17 @@
+{
+  "_fv": 28,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "greenday",
+    "name": "Green Day",
+    "description": "Green Day - American Idiot",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:greenday"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

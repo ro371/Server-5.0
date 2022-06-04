@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 3,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "minecraft:water_bucket"
+  },
+  "result": "server:deleted_mod_element_bucket"
+}
