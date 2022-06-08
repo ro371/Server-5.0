@@ -1,0 +1,23 @@
+{
+  "_fv": 28,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Alto Policía",
+    "icon": "alto_policia.png",
+    "color": {
+      "value": -13434625,
+      "falpha": 0.0
+    },
+    "isInstant": true,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "AltoPoliciaPotionStartedapplied"
+    },
+    "onExpired": {
+      "name": "AltoPoliciaPotionExpires"
+    }
+  }
+}

@@ -1,19 +1,19 @@
 {
   "_fv": 28,
-  "_type": "unknown",
+  "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "cooked_stick_apple",
     "customModelName": "Normal",
     "name": "Apple Stick",
-    "rarity": "COMMON",
+    "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "FOOD"
     },
-    "stackSize": 16,
+    "stackSize": 32,
     "enchantability": 0,
-    "useDuration": 26,
-    "toolType": 0.0,
+    "useDuration": 32,
+    "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
       "value": ""
@@ -34,13 +34,13 @@
     },
     "hasDispenseBehavior": false,
     "isFood": true,
-    "nutritionalValue": 4,
+    "nutritionalValue": 7,
     "saturation": 0.6,
     "eatResultItem": {
       "value": ""
     },
     "isMeat": false,
-    "isAlwaysEdible": false,
+    "isAlwaysEdible": true,
     "animation": "eat"
   }
 }

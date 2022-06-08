@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Mediumpizzaveneno"
+      "value": "CUSTOM:MediumPizzaVeneno"
     },
     "name": "mediumpizzavenenorecipe",
     "namespace": "mod"

@@ -13,7 +13,7 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:Pastillavenom"
+        "value": "CUSTOM:PastillaVenom"
       },
       {
         "value": ""
@@ -22,7 +22,7 @@
         "value": ""
       },
       {
-        "value": "CUSTOM:VasodeAgua"
+        "value": "CUSTOM:VasoDeagua"
       },
       {
         "value": ""
@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Vasodeaguaveneno"
+      "value": "CUSTOM:VasodeaguaVeneno"
     },
     "name": "vasodeaguavenenorecipe",
     "namespace": "mod"

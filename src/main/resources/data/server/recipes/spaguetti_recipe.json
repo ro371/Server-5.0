@@ -1,35 +1,30 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    " 1 ",
-    "345",
-    "678"
-  ],
-  "key": {
-    "1": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "minecraft:egg"
     },
-    "3": {
+    {
       "item": "minecraft:wheat"
     },
-    "4": {
+    {
       "item": "minecraft:wheat_seeds"
     },
-    "5": {
+    {
       "item": "minecraft:wheat"
     },
-    "6": {
-      "item": "server:spaguettidough"
+    {
+      "item": "server:spaguetti_dough"
     },
-    "7": {
-      "item": "server:spaguettidough"
+    {
+      "item": "server:spaguetti_dough"
     },
-    "8": {
-      "item": "server:spaguettidough"
+    {
+      "item": "server:spaguetti_dough"
     }
-  },
+  ],
   "result": {
     "item": "server:spaguetti",
-    "count": 1
+    "count": 2
   }
 }

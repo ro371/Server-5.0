@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:ApplePieveneno"
+      "value": "CUSTOM:ApplePieVeneno"
     },
     "name": "applepievenenorecipe",
     "namespace": "mod"

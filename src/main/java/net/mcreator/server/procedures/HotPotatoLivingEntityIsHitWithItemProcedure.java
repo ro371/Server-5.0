@@ -19,7 +19,7 @@ public class HotPotatoLivingEntityIsHitWithItemProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if (sourceentity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(ServerModItems.HOT_POTATO.get());
+			ItemStack _stktoremove = new ItemStack(ServerModItems.CARBON_AHUMADO.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		new Object() {

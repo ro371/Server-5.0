@@ -1,19 +1,19 @@
 {
   "_fv": 28,
-  "_type": "unknown",
+  "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "pizza_big",
     "customModelName": "Normal",
     "name": "Big Pizza",
-    "rarity": "COMMON",
+    "rarity": "EPIC",
     "creativeTab": {
       "value": "FOOD"
     },
-    "stackSize": 16,
+    "stackSize": 8,
     "enchantability": 0,
-    "useDuration": 48,
-    "toolType": 0.0,
+    "useDuration": 42,
+    "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
       "value": ""
@@ -34,8 +34,8 @@
     },
     "hasDispenseBehavior": false,
     "isFood": true,
-    "nutritionalValue": 15,
-    "saturation": 0.9,
+    "nutritionalValue": 12,
+    "saturation": 1.0,
     "eatResultItem": {
       "value": ""
     },

@@ -2,14 +2,14 @@
   "_fv": 28,
   "_type": "potion",
   "definition": {
-    "potionName": "Alto Polic�a",
-    "splashName": "Splash Alto Polic�a",
-    "lingeringName": "Lingering Alto Polic�a",
-    "arrowName": "Arrow of Alto Polic�a",
+    "potionName": "Alto Policía",
+    "splashName": "Splash Alto Policía",
+    "lingeringName": "Lingering Alto Policía",
+    "arrowName": "Arrow of Alto Policía",
     "effects": [
       {
         "effect": {
-          "value": "CUSTOM:AltoPolicia"
+          "value": "CUSTOM:StopPolicia"
         },
         "duration": 3600,
         "amplifier": 0,

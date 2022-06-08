@@ -1,25 +1,21 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "01",
-    "23"
-  ],
-  "key": {
-    "0": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "server:cooked_dough_stick"
     },
-    "1": {
+    {
       "item": "server:cooked_dough_stick"
     },
-    "2": {
+    {
       "item": "server:cooked_dough_stick"
     },
-    "3": {
+    {
       "item": "server:cooked_dough_stick"
     }
-  },
+  ],
   "result": {
-    "item": "server:spaguettidough",
+    "item": "server:spaguetti_dough",
     "count": 1
   }
 }

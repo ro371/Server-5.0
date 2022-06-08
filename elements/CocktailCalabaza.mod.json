@@ -1,19 +1,19 @@
 {
   "_fv": 28,
-  "_type": "unknown",
+  "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "pina_colada",
     "customModelName": "Normal",
     "name": "Cocktail Calabaza",
-    "rarity": "COMMON",
+    "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "FOOD"
     },
-    "stackSize": 64,
+    "stackSize": 16,
     "enchantability": 0,
-    "useDuration": 26,
-    "toolType": 0.0,
+    "useDuration": 28,
+    "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
       "value": ""
@@ -35,7 +35,7 @@
     "hasDispenseBehavior": false,
     "isFood": true,
     "nutritionalValue": 4,
-    "saturation": 0.30000000000000004,
+    "saturation": 0.3,
     "eatResultItem": {
       "value": ""
     },

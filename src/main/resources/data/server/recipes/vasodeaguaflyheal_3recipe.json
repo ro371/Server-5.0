@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "server:pastillafly"
+      "item": "server:pastilla_fly"
     },
     {
       "item": "server:vasodeaguaheal"

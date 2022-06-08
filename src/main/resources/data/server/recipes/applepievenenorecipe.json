@@ -5,11 +5,11 @@
       "item": "server:poisondrops"
     },
     {
-      "item": "server:tarta_de_manzana"
+      "item": "server:apple_pie"
     }
   ],
   "result": {
-    "item": "server:apple_pieveneno",
+    "item": "server:apple_pie_veneno",
     "count": 1
   }
 }

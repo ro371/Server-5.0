@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Pastillafly"
+      "value": "CUSTOM:PastillaFly"
     },
     "name": "pastillaflyrecipe",
     "namespace": "mod"

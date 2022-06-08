@@ -1,20 +1,23 @@
 {
   "_fv": 28,
-  "_type": "unknown",
+  "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "hotpotato",
     "customModelName": "Normal",
     "name": "Hot Potato",
-    "rarity": "COMMON",
+    "rarity": "RARE",
     "creativeTab": {
       "value": "FOOD"
     },
-    "stackSize": 16,
+    "stackSize": 32,
     "enchantability": 0,
-    "useDuration": 30,
-    "toolType": 0.0,
+    "useDuration": 40,
+    "toolType": 1.0,
     "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
@@ -22,7 +25,8 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [],
-    "hasGlow": true,
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onEntityHitWith": {
@@ -33,8 +37,8 @@
     },
     "hasDispenseBehavior": false,
     "isFood": true,
-    "nutritionalValue": 0,
-    "saturation": 0.1,
+    "nutritionalValue": 5,
+    "saturation": 0.4,
     "eatResultItem": {
       "value": ""
     },

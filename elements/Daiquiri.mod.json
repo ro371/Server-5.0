@@ -1,20 +1,23 @@
 {
   "_fv": 28,
-  "_type": "unknown",
+  "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "daiquiri",
     "customModelName": "Normal",
     "name": "Daiquiri",
-    "rarity": "COMMON",
+    "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "FOOD"
     },
-    "stackSize": 32,
+    "stackSize": 16,
     "enchantability": 0,
-    "useDuration": 24,
-    "toolType": 0.0,
+    "useDuration": 20,
+    "toolType": 1.0,
     "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
@@ -23,6 +26,7 @@
     "damageVsEntity": 0.0,
     "specialInfo": [],
     "hasGlow": false,
+    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onFinishUsingItem": {
@@ -30,8 +34,8 @@
     },
     "hasDispenseBehavior": false,
     "isFood": true,
-    "nutritionalValue": 2,
-    "saturation": 0.1,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
     "eatResultItem": {
       "value": ""
     },

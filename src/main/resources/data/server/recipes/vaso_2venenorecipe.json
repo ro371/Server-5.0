@@ -2,13 +2,13 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "server:pastillavenom"
+      "item": "server:pastilla_venom"
     },
     {
-      "item": "server:vasode_agua"
+      "item": "server:vaso_deagua"
     },
     {
-      "item": "server:pastillavenom"
+      "item": "server:pastilla_venom"
     }
   ],
   "result": {

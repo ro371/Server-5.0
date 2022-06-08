@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:VasodeAgua"
+      "value": "CUSTOM:VasoDeagua"
     },
     "name": "vasodeaguarecipe",
     "namespace": "mod"

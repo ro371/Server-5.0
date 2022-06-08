@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "server:deleted_mod_element_bucket"
+      "item": "server:aguacaliente_bucket"
     }
   ],
   "result": {

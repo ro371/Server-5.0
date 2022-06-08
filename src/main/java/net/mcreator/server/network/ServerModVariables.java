@@ -162,6 +162,7 @@ public class ServerModVariables {
 		public String police2 = "";
 		public String judge = "";
 		public String judge2 = "";
+		public String HeroTarget = "\"\"";
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -176,6 +177,7 @@ public class ServerModVariables {
 			police2 = nbt.getString("police2");
 			judge = nbt.getString("judge");
 			judge2 = nbt.getString("judge2");
+			HeroTarget = nbt.getString("HeroTarget");
 		}
 
 		@Override
@@ -186,6 +188,7 @@ public class ServerModVariables {
 			nbt.putString("police2", police2);
 			nbt.putString("judge", judge);
 			nbt.putString("judge2", judge2);
+			nbt.putString("HeroTarget", HeroTarget);
 			return nbt;
 		}
 

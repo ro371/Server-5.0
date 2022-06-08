@@ -1,19 +1,19 @@
 {
   "_fv": 28,
-  "_type": "unknown",
+  "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "pizza_normal",
     "customModelName": "Normal",
     "name": "Medium Pizza",
-    "rarity": "COMMON",
+    "rarity": "RARE",
     "creativeTab": {
       "value": "FOOD"
     },
-    "stackSize": 32,
+    "stackSize": 16,
     "enchantability": 0,
-    "useDuration": 36,
-    "toolType": 0.0,
+    "useDuration": 32,
+    "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
       "value": ""
@@ -34,8 +34,8 @@
     },
     "hasDispenseBehavior": false,
     "isFood": true,
-    "nutritionalValue": 8,
-    "saturation": 0.6,
+    "nutritionalValue": 9,
+    "saturation": 0.7999999999999999,
     "eatResultItem": {
       "value": ""
     },

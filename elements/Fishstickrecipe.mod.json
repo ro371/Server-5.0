@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Fishstick"
+      "value": "CUSTOM:FishStick"
     },
     "name": "fishstickrecipe",
     "namespace": "mod"

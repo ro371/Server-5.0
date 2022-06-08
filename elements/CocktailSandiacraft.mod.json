@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Cocktaildesandia"
+      "value": "CUSTOM:CocktailSandia"
     },
     "name": "cocktailsandiacraft",
     "namespace": "mod"

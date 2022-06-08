@@ -31,6 +31,8 @@ public class DaiquiriVenenoFoodEatenProcedure {
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 440, 4, (true), (false)));
 		if (entity instanceof LivingEntity _entity)
+			_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 60, 5, (true), (false)));
+		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 240, 2, (true), (true)));
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER,

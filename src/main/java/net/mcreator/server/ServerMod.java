@@ -26,7 +26,11 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.server.init.ServerModPotions;
+import net.mcreator.server.init.ServerModMobEffects;
 import net.mcreator.server.init.ServerModItems;
+import net.mcreator.server.init.ServerModFluids;
+import net.mcreator.server.init.ServerModEntities;
 import net.mcreator.server.init.ServerModBlocks;
 import net.mcreator.server.init.ServerModBlockEntities;
 
@@ -48,9 +52,12 @@ public class ServerMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		ServerModBlocks.REGISTRY.register(bus);
 		ServerModItems.REGISTRY.register(bus);
-
+		ServerModEntities.REGISTRY.register(bus);
 		ServerModBlockEntities.REGISTRY.register(bus);
 
+		ServerModFluids.REGISTRY.register(bus);
+
+		ServerModMobEffects.REGISTRY.register(bus);
 		ServerModPotions.REGISTRY.register(bus);
 
 	}

@@ -16,12 +16,14 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.server.block.VentBlock;
 import net.mcreator.server.block.SellBlock;
+import net.mcreator.server.block.AGUACALIENTEBlock;
 import net.mcreator.server.ServerMod;
 
 public class ServerModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, ServerMod.MODID);
 	public static final RegistryObject<Block> SELL = REGISTRY.register("sell", () -> new SellBlock());
 	public static final RegistryObject<Block> VENT = REGISTRY.register("vent", () -> new VentBlock());
+	public static final RegistryObject<Block> AGUACALIENTE = REGISTRY.register("aguacaliente", () -> new AGUACALIENTEBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

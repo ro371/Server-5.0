@@ -87,7 +87,7 @@ public class BankScreen extends AbstractContainerScreen<BankMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Cambia aqu\uFFFD tus monedas", 32, 7, -16777216);
+		this.font.draw(poseStack, "Cambia aqu\u00ED tus monedas", 32, 7, -16777216);
 	}
 
 	@Override

@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:SmallPizzaveneno"
+      "value": "CUSTOM:SmallPizzaVeneno"
     },
     "name": "smallpizzavenenorecipe",
     "namespace": "mod"

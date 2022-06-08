@@ -13,12 +13,12 @@
       {
         "type": "label",
         "data": {
-          "text": "Cambia aqu� tus monedas",
+          "text": "Cambia aquí tus monedas",
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
-          "name": "Cambia aqu� tus monedas",
+          "name": "Cambia aquí tus monedas",
           "x": 158,
           "y": 44
         }

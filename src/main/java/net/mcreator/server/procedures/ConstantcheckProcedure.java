@@ -334,7 +334,7 @@ public class ConstantcheckProcedure {
 				if (entity.getPersistentData().getDouble("coin1") >= 1) {
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.SPAGUETTI.get());
+						ItemStack _setstack = new ItemStack(ServerModItems.APPLE_STICK.get());
 						_setstack.setCount(16);
 						((Slot) _slots.get(1)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
@@ -348,14 +348,14 @@ public class ConstantcheckProcedure {
 					}
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.FISHSTICK.get());
+						ItemStack _setstack = new ItemStack(ServerModItems.DAIQUIRI.get());
 						_setstack.setCount(8);
 						((Slot) _slots.get(5)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.COCKTAIL_CALABAZA.get());
+						ItemStack _setstack = new ItemStack(ServerModItems.DOUGH.get());
 						_setstack.setCount(10);
 						((Slot) _slots.get(7)).set(_setstack);
 						_player.containerMenu.broadcastChanges();

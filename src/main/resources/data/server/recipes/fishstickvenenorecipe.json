@@ -2,17 +2,14 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "server:poisondrops"
-    },
-    {
-      "item": "server:fishstick"
+      "item": "server:fish_stick"
     },
     {
       "item": "server:poisondrops"
     }
   ],
   "result": {
-    "item": "server:fishstickveneno",
+    "item": "server:fish_stick_veneno",
     "count": 1
   }
 }

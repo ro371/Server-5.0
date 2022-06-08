@@ -1,23 +1,18 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "0",
-    "1",
-    "2"
-  ],
-  "key": {
-    "0": {
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
       "item": "server:poison_dropitem"
     },
-    "1": {
+    {
       "item": "server:pastilla"
     },
-    "2": {
+    {
       "item": "minecraft:lime_dye"
     }
-  },
+  ],
   "result": {
-    "item": "server:pastillavenom",
+    "item": "server:pastilla_venom",
     "count": 1
   }
 }

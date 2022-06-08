@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Bigpizzaveneno"
+      "value": "CUSTOM:BigPizzaVeneno"
     },
     "name": "bigpizzavenenorecipe",
     "namespace": "mod"

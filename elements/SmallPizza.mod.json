@@ -1,20 +1,23 @@
 {
   "_fv": 28,
-  "_type": "unknown",
+  "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "izza_mall",
     "customModelName": "Normal",
     "name": "Small Pizza",
-    "rarity": "COMMON",
+    "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "FOOD"
     },
-    "stackSize": 64,
+    "stackSize": 32,
     "enchantability": 0,
     "useDuration": 28,
-    "toolType": 0.0,
+    "toolType": 1.0,
     "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
@@ -23,6 +26,7 @@
     "damageVsEntity": 0.0,
     "specialInfo": [],
     "hasGlow": false,
+    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onFinishUsingItem": {
@@ -31,7 +35,7 @@
     "hasDispenseBehavior": false,
     "isFood": true,
     "nutritionalValue": 6,
-    "saturation": 0.4,
+    "saturation": 0.5,
     "eatResultItem": {
       "value": ""
     },

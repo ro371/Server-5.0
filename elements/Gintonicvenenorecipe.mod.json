@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:GinTonicveneno"
+      "value": "CUSTOM:GinTonicVeneno"
     },
     "name": "gintonicvenenorecipe",
     "namespace": "mod"

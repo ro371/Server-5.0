@@ -38,7 +38,7 @@
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:Daiquiriveneno"
+      "value": "CUSTOM:DaiquiriVeneno"
     },
     "name": "daiquirivenenorecipe",
     "namespace": "mod"
