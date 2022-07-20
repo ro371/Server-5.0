@@ -66,47 +66,71 @@ public class SellOnBlockRightClickedProcedure {
 							.performCommand(
 									new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""),
 											_level.getServer(), null).withSuppressedOutput(),
-									"tell @p Quite el ra\uFFFDl para evitar fallos accidentales.");
+									"tell @p Quite el ra\u00EDl para evitar fallos accidentales.");
 			} else {
-				if ((entity.getDisplayName().getString()).equals(new Object() {
-					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
-						BlockEntity blockEntity = world.getBlockEntity(pos);
-						if (blockEntity != null)
-							return blockEntity.getTileData().getString(tag);
-						return "";
-					}
-				}.getValue(world, new BlockPos(x, y, z), "name"))) {
-					{
-						if (entity instanceof ServerPlayer _ent) {
-							BlockPos _bpos = new BlockPos(x, y, z);
-							NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
-								@Override
-								public Component getDisplayName() {
-									return new TextComponent("Sellgui");
-								}
-
-								@Override
-								public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-									return new SellguiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
-								}
-							}, _bpos);
-						}
-					}
+				if ((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.POWERED_RAIL) {
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performCommand(
+								new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""),
+										_level.getServer(), null).withSuppressedOutput(),
+								"tell @p Quite el ra\u00EDl para evitar fallos accidentales.");
 				} else {
-					{
-						if (entity instanceof ServerPlayer _ent) {
-							BlockPos _bpos = new BlockPos(x, y, z);
-							NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
-								@Override
-								public Component getDisplayName() {
-									return new TextComponent("Buygui");
+					if ((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.DETECTOR_RAIL) {
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performCommand(
+									new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""),
+											_level.getServer(), null).withSuppressedOutput(),
+									"tell @p Quite el ra\u00EDl para evitar fallos accidentales.");
+					} else {
+						if ((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.ACTIVATOR_RAIL) {
+							if (world instanceof ServerLevel _level)
+								_level.getServer().getCommands().performCommand(
+										new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""),
+												_level.getServer(), null).withSuppressedOutput(),
+										"tell @p Quite el ra\u00EDl para evitar fallos accidentales.");
+						} else {
+							if ((entity.getDisplayName().getString()).equals(new Object() {
+								public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+									BlockEntity blockEntity = world.getBlockEntity(pos);
+									if (blockEntity != null)
+										return blockEntity.getTileData().getString(tag);
+									return "";
 								}
+							}.getValue(world, new BlockPos(x, y, z), "name"))) {
+								{
+									if (entity instanceof ServerPlayer _ent) {
+										BlockPos _bpos = new BlockPos(x, y, z);
+										NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+											@Override
+											public Component getDisplayName() {
+												return new TextComponent("Sellgui");
+											}
 
-								@Override
-								public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-									return new BuyguiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+											@Override
+											public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+												return new SellguiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+											}
+										}, _bpos);
+									}
 								}
-							}, _bpos);
+							} else {
+								{
+									if (entity instanceof ServerPlayer _ent) {
+										BlockPos _bpos = new BlockPos(x, y, z);
+										NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+											@Override
+											public Component getDisplayName() {
+												return new TextComponent("Buygui");
+											}
+
+											@Override
+											public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+												return new BuyguiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+											}
+										}, _bpos);
+									}
+								}
+							}
 						}
 					}
 				}

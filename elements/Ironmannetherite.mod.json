@@ -13,7 +13,7 @@
     "creativeTab": {
       "value": "COMBAT"
     },
-    "armorTextureFile": "netherite_",
+    "armorTextureFile": "ironman_",
     "helmetName": "Ironmannetherite Helmet",
     "bodyName": "Ironmannetherite Body",
     "leggingsName": "Ironmannetherite Leggings",
@@ -42,14 +42,14 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
-    "maxDamage": 25,
-    "damageValueHelmet": 2,
-    "damageValueBody": 6,
+    "maxDamage": 50,
+    "damageValueHelmet": 3,
+    "damageValueBody": 7,
     "damageValueLeggings": 5,
-    "damageValueBoots": 2,
-    "enchantability": 9,
-    "toughness": 0.0,
-    "knockbackResistance": 0.0,
+    "damageValueBoots": 3,
+    "enchantability": 18,
+    "toughness": 2.6,
+    "knockbackResistance": 0.2,
     "equipSound": {
       "value": ""
     },

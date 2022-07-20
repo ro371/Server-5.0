@@ -19,17 +19,17 @@ public abstract class IronmannetheriteItem extends ArmorItem {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForSlot(EquipmentSlot slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 25;
+				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 50;
 			}
 
 			@Override
 			public int getDefenseForSlot(EquipmentSlot slot) {
-				return new int[]{2, 5, 6, 2}[slot.getIndex()];
+				return new int[]{3, 5, 7, 3}[slot.getIndex()];
 			}
 
 			@Override
 			public int getEnchantmentValue() {
-				return 9;
+				return 18;
 			}
 
 			@Override
@@ -49,12 +49,12 @@ public abstract class IronmannetheriteItem extends ArmorItem {
 
 			@Override
 			public float getToughness() {
-				return 0f;
+				return 2.6f;
 			}
 
 			@Override
 			public float getKnockbackResistance() {
-				return 0f;
+				return 0.2f;
 			}
 		}, slot, properties);
 	}
@@ -66,7 +66,7 @@ public abstract class IronmannetheriteItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "server:textures/models/armor/netherite__layer_1.png";
+			return "server:textures/models/armor/ironman__layer_1.png";
 		}
 	}
 
@@ -77,7 +77,7 @@ public abstract class IronmannetheriteItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "server:textures/models/armor/netherite__layer_1.png";
+			return "server:textures/models/armor/ironman__layer_1.png";
 		}
 	}
 
@@ -88,7 +88,7 @@ public abstract class IronmannetheriteItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "server:textures/models/armor/netherite__layer_2.png";
+			return "server:textures/models/armor/ironman__layer_2.png";
 		}
 	}
 
@@ -99,7 +99,7 @@ public abstract class IronmannetheriteItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "server:textures/models/armor/netherite__layer_1.png";
+			return "server:textures/models/armor/ironman__layer_1.png";
 		}
 	}
 }

@@ -1,0 +1,30 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "espada_rayo",
+    "customModelName": "Normal",
+    "name": "Espada Rayo",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 0,
+    "efficiency": 3.0,
+    "attackSpeed": 1.7000000000000002,
+    "enchantability": 18,
+    "damageVsEntity": 8.0,
+    "usageCount": 100,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "GlowItem"
+    },
+    "repairItems": [],
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

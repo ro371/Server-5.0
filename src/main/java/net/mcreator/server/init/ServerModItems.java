@@ -43,6 +43,7 @@ import net.mcreator.server.item.PoisondropsItem;
 import net.mcreator.server.item.PoisonDropitemItem;
 import net.mcreator.server.item.PizzaDoughItem;
 import net.mcreator.server.item.Pilots21diskItem;
+import net.mcreator.server.item.PicoDeFuegoItem;
 import net.mcreator.server.item.PhineasdiskItem;
 import net.mcreator.server.item.PhallicObjectItem;
 import net.mcreator.server.item.PergaminoItem;
@@ -51,6 +52,8 @@ import net.mcreator.server.item.PastillaItem;
 import net.mcreator.server.item.PastillaHealItem;
 import net.mcreator.server.item.PastillaFlyItem;
 import net.mcreator.server.item.PaseportucasadiskItem;
+import net.mcreator.server.item.PalaDeFuegoItem;
+import net.mcreator.server.item.NetheritearmourItem;
 import net.mcreator.server.item.MooddiskItem;
 import net.mcreator.server.item.MonteroItem;
 import net.mcreator.server.item.MojitoSandiaItem;
@@ -73,12 +76,16 @@ import net.mcreator.server.item.IronmannetheriteItem;
 import net.mcreator.server.item.IbaidiskItem;
 import net.mcreator.server.item.HowdoyousleepdiskItem;
 import net.mcreator.server.item.HotPotatoItem;
+import net.mcreator.server.item.HachaDeFuegoItem;
 import net.mcreator.server.item.GreenDaydiskItem;
 import net.mcreator.server.item.GoforwardItem;
 import net.mcreator.server.item.GinTonicVenenoItem;
 import net.mcreator.server.item.GinTonicItem;
 import net.mcreator.server.item.FishStickVenenoItem;
 import net.mcreator.server.item.FishStickItem;
+import net.mcreator.server.item.EspadaRayoItem;
+import net.mcreator.server.item.EspadaFuturoItem;
+import net.mcreator.server.item.EspadaDeFuegoItem;
 import net.mcreator.server.item.EsgratisdiskItem;
 import net.mcreator.server.item.ElAnilloItem;
 import net.mcreator.server.item.DoughStickItem;
@@ -93,10 +100,14 @@ import net.mcreator.server.item.Coin5Item;
 import net.mcreator.server.item.Coin1Item;
 import net.mcreator.server.item.CocktailSandiaItem;
 import net.mcreator.server.item.CocktailCalabazaItem;
+import net.mcreator.server.item.ChefItem;
 import net.mcreator.server.item.CakebytheoceanItem;
+import net.mcreator.server.item.CaballeroNetheriteItem;
 import net.mcreator.server.item.BlurItem;
 import net.mcreator.server.item.BigPizzaVenenoItem;
 import net.mcreator.server.item.BigPizzaItem;
+import net.mcreator.server.item.AzadaDeFuegoItem;
+import net.mcreator.server.item.ArcoDeFuegoItem;
 import net.mcreator.server.item.AppleStickItem;
 import net.mcreator.server.item.ApplePieVenenoItem;
 import net.mcreator.server.item.ApplePieItem;
@@ -216,6 +227,31 @@ public class ServerModItems {
 	public static final RegistryObject<Item> VASODEAGUAFLYHEAL = REGISTRY.register("vasodeaguaflyheal", () -> new VasodeaguaflyhealItem());
 	public static final RegistryObject<Item> VASODEAGUA_2VENENO = REGISTRY.register("vasodeagua_2veneno", () -> new Vasodeagua2venenoItem());
 	public static final RegistryObject<Item> AGUACALIENTE_BUCKET = REGISTRY.register("aguacaliente_bucket", () -> new AGUACALIENTEItem());
+	public static final RegistryObject<Item> CHEF_HELMET = REGISTRY.register("chef_helmet", () -> new ChefItem.Helmet());
+	public static final RegistryObject<Item> ESPADA_RAYO = REGISTRY.register("espada_rayo", () -> new EspadaRayoItem());
+	public static final RegistryObject<Item> ESPADA_FUTURO = REGISTRY.register("espada_futuro", () -> new EspadaFuturoItem());
+	public static final RegistryObject<Item> NETHERITEARMOUR_HELMET = REGISTRY.register("netheritearmour_helmet",
+			() -> new NetheritearmourItem.Helmet());
+	public static final RegistryObject<Item> NETHERITEARMOUR_CHESTPLATE = REGISTRY.register("netheritearmour_chestplate",
+			() -> new NetheritearmourItem.Chestplate());
+	public static final RegistryObject<Item> NETHERITEARMOUR_LEGGINGS = REGISTRY.register("netheritearmour_leggings",
+			() -> new NetheritearmourItem.Leggings());
+	public static final RegistryObject<Item> NETHERITEARMOUR_BOOTS = REGISTRY.register("netheritearmour_boots",
+			() -> new NetheritearmourItem.Boots());
+	public static final RegistryObject<Item> ARCO_DE_FUEGO = REGISTRY.register("arco_de_fuego", () -> new ArcoDeFuegoItem());
+	public static final RegistryObject<Item> HACHA_DE_FUEGO = REGISTRY.register("hacha_de_fuego", () -> new HachaDeFuegoItem());
+	public static final RegistryObject<Item> AZADA_DE_FUEGO = REGISTRY.register("azada_de_fuego", () -> new AzadaDeFuegoItem());
+	public static final RegistryObject<Item> PALA_DE_FUEGO = REGISTRY.register("pala_de_fuego", () -> new PalaDeFuegoItem());
+	public static final RegistryObject<Item> PICO_DE_FUEGO = REGISTRY.register("pico_de_fuego", () -> new PicoDeFuegoItem());
+	public static final RegistryObject<Item> ESPADA_DE_FUEGO = REGISTRY.register("espada_de_fuego", () -> new EspadaDeFuegoItem());
+	public static final RegistryObject<Item> CABALLERO_NETHERITE_HELMET = REGISTRY.register("caballero_netherite_helmet",
+			() -> new CaballeroNetheriteItem.Helmet());
+	public static final RegistryObject<Item> CABALLERO_NETHERITE_CHESTPLATE = REGISTRY.register("caballero_netherite_chestplate",
+			() -> new CaballeroNetheriteItem.Chestplate());
+	public static final RegistryObject<Item> CABALLERO_NETHERITE_LEGGINGS = REGISTRY.register("caballero_netherite_leggings",
+			() -> new CaballeroNetheriteItem.Leggings());
+	public static final RegistryObject<Item> CABALLERO_NETHERITE_BOOTS = REGISTRY.register("caballero_netherite_boots",
+			() -> new CaballeroNetheriteItem.Boots());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
