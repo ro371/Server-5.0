@@ -13,7 +13,7 @@ import net.mcreator.server.procedures.SmallPizzaFoodEatenProcedure;
 
 public class SpaguettiItem extends Item {
 	public SpaguettiItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).stacksTo(64).rarity(Rarity.COMMON)
+		super(new Item.Properties().tab(CreativeModeTab.TAB_FOOD).stacksTo(64).rarity(Rarity.UNCOMMON)
 				.food((new FoodProperties.Builder()).nutrition(7).saturationMod(0.6f).alwaysEat()
 
 						.build()));

@@ -11,7 +11,7 @@ public class AzadaDeFuegoItem extends HoeItem {
 	public AzadaDeFuegoItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 1000;
+				return 3000;
 			}
 
 			public float getSpeed() {
@@ -19,7 +19,7 @@ public class AzadaDeFuegoItem extends HoeItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return -0.8f;
+				return -0.7f;
 			}
 
 			public int getLevel() {
@@ -33,6 +33,6 @@ public class AzadaDeFuegoItem extends HoeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		}, 0, 1f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS).fireResistant());
+		}, 0, 1.3999999999999995f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS).fireResistant());
 	}
 }

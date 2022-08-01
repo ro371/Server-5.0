@@ -11,7 +11,7 @@ public class HachaDeFuegoItem extends AxeItem {
 	public HachaDeFuegoItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 100;
+				return 2000;
 			}
 
 			public float getSpeed() {

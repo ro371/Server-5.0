@@ -15,7 +15,7 @@ public class EspadaDeFuegoItem extends SwordItem {
 	public EspadaDeFuegoItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 1000;
+				return 1800;
 			}
 
 			public float getSpeed() {
@@ -31,7 +31,7 @@ public class EspadaDeFuegoItem extends SwordItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 18;
+				return 20;
 			}
 
 			public Ingredient getRepairIngredient() {

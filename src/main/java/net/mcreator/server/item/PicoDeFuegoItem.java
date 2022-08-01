@@ -11,7 +11,7 @@ public class PicoDeFuegoItem extends PickaxeItem {
 	public PicoDeFuegoItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 1000;
+				return 2000;
 			}
 
 			public float getSpeed() {
@@ -27,7 +27,7 @@ public class PicoDeFuegoItem extends PickaxeItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 18;
+				return 20;
 			}
 
 			public Ingredient getRepairIngredient() {

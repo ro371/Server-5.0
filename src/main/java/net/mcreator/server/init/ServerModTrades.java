@@ -28,5 +28,9 @@ public class ServerModTrades {
 
 					new ItemStack(Items.EMERALD), 8, 5, 0.08f));
 		}
+		if (event.getType() == VillagerProfession.WEAPONSMITH) {
+			trades.get(4).add(new BasicItemListing(new ItemStack(Items.GUNPOWDER), new ItemStack(Items.REDSTONE, 2),
+					new ItemStack(ServerModItems.MINE.get(), 3), 12, 5, 0.08f));
+		}
 	}
 }

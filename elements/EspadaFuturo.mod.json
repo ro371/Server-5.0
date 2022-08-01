@@ -13,10 +13,10 @@
     "toolType": "Sword",
     "harvestLevel": 0,
     "efficiency": 2.0,
-    "attackSpeed": 2.0,
-    "enchantability": 20,
+    "attackSpeed": 1.9,
+    "enchantability": 22,
     "damageVsEntity": 7.0,
-    "usageCount": 1000,
+    "usageCount": 2800,
     "blocksAffected": [],
     "hasGlow": true,
     "glowCondition": {

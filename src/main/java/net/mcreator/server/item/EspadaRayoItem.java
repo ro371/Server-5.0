@@ -20,7 +20,7 @@ public class EspadaRayoItem extends SwordItem {
 	public EspadaRayoItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 100;
+				return 2500;
 			}
 
 			public float getSpeed() {
@@ -42,7 +42,7 @@ public class EspadaRayoItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.EMPTY;
 			}
-		}, 3, -2.2999999999999998f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
+		}, 3, -2.2f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
 	}
 
 	@Override

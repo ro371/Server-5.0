@@ -23,5 +23,7 @@ public class ServerModPaintings {
 		event.getRegistry().register(new Motive(48, 48).setRegistryName("montero_4"));
 		event.getRegistry().register(new Motive(48, 48).setRegistryName("montero_5"));
 		event.getRegistry().register(new Motive(80, 32).setRegistryName("montero_6"));
+		event.getRegistry().register(new Motive(48, 32).setRegistryName("cuspiland_v"));
+		event.getRegistry().register(new Motive(480, 320).setRegistryName("cuspilandv_2"));
 	}
 }

@@ -24,7 +24,7 @@ public abstract class NetheritearmourItem extends ArmorItem {
 
 			@Override
 			public int getDefenseForSlot(EquipmentSlot slot) {
-				return new int[]{3, 6, 8, 3}[slot.getIndex()];
+				return new int[]{3, 6, 8, 4}[slot.getIndex()];
 			}
 
 			@Override
@@ -54,7 +54,7 @@ public abstract class NetheritearmourItem extends ArmorItem {
 
 			@Override
 			public float getKnockbackResistance() {
-				return 0.3f;
+				return 0.4f;
 			}
 		}, slot, properties);
 	}

@@ -1,0 +1,33 @@
+{
+  "_fv": 28,
+  "_type": "villagertrade",
+  "definition": {
+    "tradeEntries": [
+      {
+        "villagerProfession": {
+          "value": "WEAPONSMITH"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "Items.GUNPOWDER"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "Items.REDSTONE"
+            },
+            "countPrice2": 2,
+            "offer": {
+              "value": "CUSTOM:Mine"
+            },
+            "countOffer": 3,
+            "level": 4,
+            "maxTrades": 12,
+            "xp": 5,
+            "priceMultiplier": 0.08
+          }
+        ]
+      }
+    ]
+  }
+}

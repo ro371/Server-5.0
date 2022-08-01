@@ -24,12 +24,12 @@ public abstract class IronmannetheriteItem extends ArmorItem {
 
 			@Override
 			public int getDefenseForSlot(EquipmentSlot slot) {
-				return new int[]{3, 5, 7, 3}[slot.getIndex()];
+				return new int[]{3, 5, 7, 4}[slot.getIndex()];
 			}
 
 			@Override
 			public int getEnchantmentValue() {
-				return 18;
+				return 19;
 			}
 
 			@Override
@@ -49,7 +49,7 @@ public abstract class IronmannetheriteItem extends ArmorItem {
 
 			@Override
 			public float getToughness() {
-				return 2.6f;
+				return 2.8000000000000003f;
 			}
 
 			@Override

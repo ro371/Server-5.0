@@ -11,7 +11,7 @@ public class PalaDeFuegoItem extends ShovelItem {
 	public PalaDeFuegoItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 1000;
+				return 3000;
 			}
 
 			public float getSpeed() {
@@ -27,7 +27,7 @@ public class PalaDeFuegoItem extends ShovelItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 18;
+				return 20;
 			}
 
 			public Ingredient getRepairIngredient() {
