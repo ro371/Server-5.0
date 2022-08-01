@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "server:blocks/cobble",
+    "up": "server:blocks/cobble",
+    "north": "server:blocks/cobble",
+    "east": "server:blocks/cobble",
+    "south": "server:blocks/cobble",
+    "west": "server:blocks/cobble",
+    "particle": "server:blocks/cobble"
+  }
+}

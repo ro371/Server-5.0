@@ -1,0 +1,44 @@
+{
+  "criteria": {
+    "minitas": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "server:mine"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1000
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 10,
+    "loot": [
+      "server:entities/minerewards"
+    ],
+    "recipes": [
+      "server:minecrafteo",
+      "server:earthminecrafteo",
+      "server:cobbleminecrafteo",
+      "server:craftingminecrafteo",
+      "server:sandminecrafteo",
+      "server:oakminecrafteo",
+      "server:planksminecrafteo",
+      "server:quartzminecrafteo",
+      "server:ironminecrafteo",
+      "server:goldminecrafteo",
+      "server:diamondminecrafteo",
+      "server:stoneminecrafteo",
+      "server:furnaceminecrafteo",
+      "server:luparecipe",
+      "server:deactivatorrecipe"
+    ]
+  },
+  "parent": "server:the_witch"
+}

@@ -1,6 +1,13 @@
 {
   "replace": false,
   "values": [
-    "server:vent"
+    "server:vent",
+    "server:cobblemine",
+    "server:furnacemine",
+    "server:stonemine",
+    "server:ironmine",
+    "server:goldmine",
+    "server:diamondmine",
+    "server:quartzmine"
   ]
 }

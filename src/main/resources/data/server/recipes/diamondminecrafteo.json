@@ -1,0 +1,16 @@
+{
+  "group": "minas",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "server:mine"
+    },
+    {
+      "item": "minecraft:diamond_ore"
+    }
+  ],
+  "result": {
+    "item": "server:diamondmine",
+    "count": 1
+  }
+}

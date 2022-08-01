@@ -1,0 +1,16 @@
+{
+  "group": "minas",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "server:mine"
+    },
+    {
+      "tag": "forge:stone"
+    }
+  ],
+  "result": {
+    "item": "server:stonemine",
+    "count": 1
+  }
+}

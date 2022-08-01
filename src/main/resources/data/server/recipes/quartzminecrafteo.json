@@ -1,0 +1,16 @@
+{
+  "group": "minas",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "server:mine"
+    },
+    {
+      "tag": "forge:ores/quartz"
+    }
+  ],
+  "result": {
+    "item": "server:quartzmine",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "server:blocks/tablones_roble",
+    "up": "server:blocks/mesa_crafteo_arriba",
+    "north": "server:blocks/mesa_crafteo",
+    "east": "server:blocks/mesa_crafteo_atras",
+    "south": "server:blocks/mesa_crafteo_atras",
+    "west": "server:blocks/mesa_crafteo_atras",
+    "particle": "server:blocks/tablones_roble"
+  }
+}

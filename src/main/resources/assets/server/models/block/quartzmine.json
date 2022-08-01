@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "server:blocks/cuarzo_abajo",
+    "up": "server:blocks/cuarzo_arriba",
+    "north": "server:blocks/cuarzo_lados",
+    "east": "server:blocks/cuarzo_lados",
+    "south": "server:blocks/cuarzo_lados",
+    "west": "server:blocks/cuarzo_lados",
+    "particle": "server:blocks/cuarzo_abajo"
+  }
+}

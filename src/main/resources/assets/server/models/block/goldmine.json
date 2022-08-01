@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "server:blocks/mena_de_oro",
+    "up": "server:blocks/mena_de_oro",
+    "north": "server:blocks/mena_de_oro",
+    "east": "server:blocks/mena_de_oro",
+    "south": "server:blocks/mena_de_oro",
+    "west": "server:blocks/mena_de_oro",
+    "particle": "server:blocks/mena_de_oro"
+  }
+}

@@ -66,11 +66,13 @@ import net.mcreator.server.item.MisionmelonItem;
 import net.mcreator.server.item.MisionfishItem;
 import net.mcreator.server.item.MisionSeedsItem;
 import net.mcreator.server.item.MisionItem;
+import net.mcreator.server.item.MineItem;
 import net.mcreator.server.item.MemyselfandIdiskItem;
 import net.mcreator.server.item.MediumPizzaVenenoItem;
 import net.mcreator.server.item.MediumPizzaItem;
 import net.mcreator.server.item.MazoItem;
 import net.mcreator.server.item.ManzanaVenenoItem;
+import net.mcreator.server.item.LupaItem;
 import net.mcreator.server.item.JuramentodesalDiskItem;
 import net.mcreator.server.item.IronmannetheriteItem;
 import net.mcreator.server.item.IbaidiskItem;
@@ -93,6 +95,7 @@ import net.mcreator.server.item.DoughItem;
 import net.mcreator.server.item.Disc123Item;
 import net.mcreator.server.item.DesastreItem;
 import net.mcreator.server.item.DelgaditoItem;
+import net.mcreator.server.item.DeactivatorItem;
 import net.mcreator.server.item.DaiquiriVenenoItem;
 import net.mcreator.server.item.DaiquiriItem;
 import net.mcreator.server.item.CookedDoughStickItem;
@@ -252,6 +255,21 @@ public class ServerModItems {
 			() -> new CaballeroNetheriteItem.Leggings());
 	public static final RegistryObject<Item> CABALLERO_NETHERITE_BOOTS = REGISTRY.register("caballero_netherite_boots",
 			() -> new CaballeroNetheriteItem.Boots());
+	public static final RegistryObject<Item> EARTHMINE = block(ServerModBlocks.EARTHMINE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> LUPA = REGISTRY.register("lupa", () -> new LupaItem());
+	public static final RegistryObject<Item> COBBLEMINE = block(ServerModBlocks.COBBLEMINE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> CRAFTINGMINE = block(ServerModBlocks.CRAFTINGMINE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> FURNACEMINE = block(ServerModBlocks.FURNACEMINE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> STONEMINE = block(ServerModBlocks.STONEMINE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> SANDMINE = block(ServerModBlocks.SANDMINE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> IRONMINE = block(ServerModBlocks.IRONMINE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> GOLDMINE = block(ServerModBlocks.GOLDMINE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> DIAMONDMINE = block(ServerModBlocks.DIAMONDMINE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> PLANKSMINE = block(ServerModBlocks.PLANKSMINE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> OAKMINE = block(ServerModBlocks.OAKMINE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> QUARTZMINE = block(ServerModBlocks.QUARTZMINE, CreativeModeTab.TAB_REDSTONE);
+	public static final RegistryObject<Item> MINE = REGISTRY.register("mine", () -> new MineItem());
+	public static final RegistryObject<Item> DEACTIVATOR = REGISTRY.register("deactivator", () -> new DeactivatorItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
