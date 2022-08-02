@@ -9,7 +9,7 @@ public class ShowpreviousProcedure {
 		if (entity == null)
 			return false;
 		boolean isshown = false;
-		if (0 == (entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+		if (0 >= (entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new ServerModVariables.PlayerVariables())).menupage) {
 			isshown = false;
 		} else {

@@ -335,14 +335,14 @@ public class ConstantcheckProcedure {
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
 						ItemStack _setstack = new ItemStack(ServerModItems.APPLE_STICK.get());
-						_setstack.setCount(16);
+						_setstack.setCount(20);
 						((Slot) _slots.get(1)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(Items.BREAD);
-						_setstack.setCount(32);
+						ItemStack _setstack = new ItemStack(ServerModItems.MANZANA_VENENO.get());
+						_setstack.setCount(8);
 						((Slot) _slots.get(3)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
@@ -355,7 +355,7 @@ public class ConstantcheckProcedure {
 					}
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.DOUGH.get());
+						ItemStack _setstack = new ItemStack(ServerModItems.PIZZA_DOUGH.get());
 						_setstack.setCount(10);
 						((Slot) _slots.get(7)).set(_setstack);
 						_player.containerMenu.broadcastChanges();

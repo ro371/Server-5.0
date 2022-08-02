@@ -10,7 +10,7 @@ public class ShownextProcedure {
 			return false;
 		boolean truecheck = false;
 		if ((entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ServerModVariables.PlayerVariables())).menupage == 2) {
+				.orElse(new ServerModVariables.PlayerVariables())).menupage >= 2) {
 			truecheck = false;
 		} else {
 			truecheck = true;
