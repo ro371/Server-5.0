@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "server_v5:cooked_dough_stick"
+    },
+    {
+      "item": "server_v5:cooked_dough_stick"
+    },
+    {
+      "item": "server_v5:cooked_dough_stick"
+    },
+    {
+      "item": "server_v5:cooked_dough_stick"
+    }
+  ],
+  "result": {
+    "item": "server_v5:spaguetti_dough",
+    "count": 1
+  }
+}

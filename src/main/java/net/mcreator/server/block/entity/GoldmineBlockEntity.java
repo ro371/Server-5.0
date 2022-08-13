@@ -22,7 +22,7 @@ import net.minecraft.core.NonNullList;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.server.init.ServerModBlockEntities;
+import net.mcreator.server.init.ServerV5ModBlockEntities;
 
 import javax.annotation.Nullable;
 
@@ -33,7 +33,7 @@ public class GoldmineBlockEntity extends RandomizableContainerBlockEntity implem
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public GoldmineBlockEntity(BlockPos position, BlockState state) {
-		super(ServerModBlockEntities.GOLDMINE.get(), position, state);
+		super(ServerV5ModBlockEntities.GOLDMINE.get(), position, state);
 	}
 
 	@Override

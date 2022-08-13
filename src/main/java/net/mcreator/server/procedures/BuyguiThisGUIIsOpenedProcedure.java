@@ -13,7 +13,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.server.network.ServerModVariables;
+import net.mcreator.server.network.ServerV5ModVariables;
 
 import java.util.function.Supplier;
 import java.util.concurrent.atomic.AtomicReference;
@@ -47,7 +47,7 @@ public class BuyguiThisGUIIsOpenedProcedure {
 			private void run() {
 				{
 					boolean _setval = true;
-					entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.guishopopen = _setval;
 						capability.syncPlayerVariables(entity);
 					});
@@ -65,12 +65,12 @@ public class BuyguiThisGUIIsOpenedProcedure {
 						}
 					}.getItemStack(world,
 							new BlockPos(
-									(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new ServerModVariables.PlayerVariables())).x,
-									(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new ServerModVariables.PlayerVariables())).y,
-									(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new ServerModVariables.PlayerVariables())).z),
+									(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+											.orElse(new ServerV5ModVariables.PlayerVariables())).x,
+									(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+											.orElse(new ServerV5ModVariables.PlayerVariables())).y,
+									(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+											.orElse(new ServerV5ModVariables.PlayerVariables())).z),
 							3));
 					_setstack.setCount(new Object() {
 						public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
@@ -83,12 +83,12 @@ public class BuyguiThisGUIIsOpenedProcedure {
 						}
 					}.getAmount(world,
 							new BlockPos(
-									(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new ServerModVariables.PlayerVariables())).x,
-									(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new ServerModVariables.PlayerVariables())).y,
-									(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new ServerModVariables.PlayerVariables())).z),
+									(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+											.orElse(new ServerV5ModVariables.PlayerVariables())).x,
+									(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+											.orElse(new ServerV5ModVariables.PlayerVariables())).y,
+									(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+											.orElse(new ServerV5ModVariables.PlayerVariables())).z),
 							2));
 					((Slot) _slots.get(6)).set(_setstack);
 					_player.containerMenu.broadcastChanges();

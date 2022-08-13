@@ -5,7 +5,7 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 
-import net.mcreator.server.init.ServerModItems;
+import net.mcreator.server.init.ServerV5ModItems;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -32,7 +32,7 @@ public class BankWhileThisGUIIsOpenTickProcedure {
 			}
 			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 					&& _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(ServerModItems.COIN_5.get());
+				ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_5.get());
 				_setstack.setCount((int) (new Object() {
 					public int getAmount(int sltid) {
 						if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
@@ -66,7 +66,7 @@ public class BankWhileThisGUIIsOpenTickProcedure {
 			}
 			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 					&& _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+				ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 				_setstack.setCount((int) (new Object() {
 					public int getAmount(int sltid) {
 						if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "server_v5:blocks/mena_de_hierro",
+    "up": "server_v5:blocks/mena_de_hierro",
+    "north": "server_v5:blocks/mena_de_hierro",
+    "east": "server_v5:blocks/mena_de_hierro",
+    "south": "server_v5:blocks/mena_de_hierro",
+    "west": "server_v5:blocks/mena_de_hierro",
+    "particle": "server_v5:blocks/mena_de_hierro"
+  }
+}

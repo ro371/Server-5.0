@@ -12,13 +12,13 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.server.init.ServerModItems;
+import net.mcreator.server.init.ServerV5ModItems;
 
 public class CraftingmineOnBlockRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ServerModItems.LUPA.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ServerV5ModItems.LUPA.get()) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
 				_player.displayClientMessage(new TextComponent(("Mina colocada por: " + (new Object() {
 					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -28,7 +28,7 @@ public class CraftingmineOnBlockRightClickedProcedure {
 						return "";
 					}
 				}.getValue(world, new BlockPos(x, y, z), "mineowner")))), (true));
-		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ServerModItems.DEACTIVATOR
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ServerV5ModItems.DEACTIVATOR
 				.get()) {
 			DeactivatorRightclickedOnBlockProcedure.execute(world, x, y, z, entity);
 		} else {

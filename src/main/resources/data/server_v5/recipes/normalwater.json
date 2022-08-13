@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "server_v5:aguacaliente_bucket"
+    }
+  ],
+  "result": {
+    "item": "minecraft:water_bucket",
+    "count": 1
+  }
+}

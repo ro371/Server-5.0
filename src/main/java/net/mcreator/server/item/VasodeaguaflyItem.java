@@ -12,7 +12,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 
 import net.mcreator.server.procedures.PastillaflyFoodEatenProcedure;
-import net.mcreator.server.init.ServerModItems;
+import net.mcreator.server.init.ServerV5ModItems;
 
 public class VasodeaguaflyItem extends Item {
 	public VasodeaguaflyItem() {
@@ -32,7 +32,7 @@ public class VasodeaguaflyItem extends Item {
 
 	@Override
 	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
-		ItemStack retval = new ItemStack(ServerModItems.VASO.get());
+		ItemStack retval = new ItemStack(ServerV5ModItems.VASO.get());
 		super.finishUsingItem(itemstack, world, entity);
 		double x = entity.getX();
 		double y = entity.getY();

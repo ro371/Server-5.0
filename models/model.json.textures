@@ -1,0 +1,18 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "barril",
+        "1": "barril_1",
+        "2": "barril_2",
+        "3": "barril_3",
+        "4": "barril_4",
+        "5": "barril_5",
+        "6": "barril_6",
+        "7": "barril_7",
+        "8": "barril_8"
+      },
+      "name": "default"
+    }
+  }
+}

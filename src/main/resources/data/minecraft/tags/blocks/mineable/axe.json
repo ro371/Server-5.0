@@ -1,8 +1,10 @@
 {
   "replace": false,
   "values": [
-    "server:craftingmine",
-    "server:planksmine",
-    "server:oakmine"
+    "server_v5:craftingmine",
+    "server_v5:planksmine",
+    "server_v5:oakmine",
+    "server_v5:barril",
+    "server_v5:prensa"
   ]
 }

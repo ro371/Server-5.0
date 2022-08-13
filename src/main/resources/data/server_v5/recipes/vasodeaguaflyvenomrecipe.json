@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "server_v5:pastilla_venom"
+    },
+    {
+      "item": "server_v5:pastilla_fly"
+    },
+    {
+      "item": "server_v5:vaso_deagua"
+    }
+  ],
+  "result": {
+    "item": "server_v5:vasodeaguaflyvenom",
+    "count": 1
+  }
+}

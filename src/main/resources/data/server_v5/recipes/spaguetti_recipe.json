@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:wheat_seeds"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "server_v5:spaguetti_dough"
+    },
+    {
+      "item": "server_v5:spaguetti_dough"
+    },
+    {
+      "item": "server_v5:spaguetti_dough"
+    }
+  ],
+  "result": {
+    "item": "server_v5:spaguetti",
+    "count": 2
+  }
+}

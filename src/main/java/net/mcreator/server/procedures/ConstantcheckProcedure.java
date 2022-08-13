@@ -13,8 +13,8 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 
-import net.mcreator.server.network.ServerModVariables;
-import net.mcreator.server.init.ServerModItems;
+import net.mcreator.server.network.ServerV5ModVariables;
+import net.mcreator.server.init.ServerV5ModItems;
 
 import java.util.function.Supplier;
 import java.util.concurrent.atomic.AtomicReference;
@@ -32,78 +32,78 @@ public class ConstantcheckProcedure {
 			if (_iitemhandlerref.get() != null) {
 				for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
 					ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-					if (ServerModItems.COIN_1.get() == itemstackiterator.getItem()) {
+					if (ServerV5ModItems.COIN_1.get() == itemstackiterator.getItem()) {
 						entity.getPersistentData().putDouble("coin1",
 								(entity.getPersistentData().getDouble("coin1") + (itemstackiterator).getCount()));
 					}
-					if (ServerModItems.COIN_5.get() == itemstackiterator.getItem()) {
+					if (ServerV5ModItems.COIN_5.get() == itemstackiterator.getItem()) {
 						entity.getPersistentData().putDouble("coin5",
 								(entity.getPersistentData().getDouble("coin5") + (itemstackiterator).getCount()));
 					}
 				}
 			}
 		}
-		if ((entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ServerModVariables.PlayerVariables())).menupage == 0) {
+		if ((entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new ServerV5ModVariables.PlayerVariables())).menupage == 0) {
 			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 					&& _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+				ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 				_setstack.setCount(2);
 				((Slot) _slots.get(0)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 					&& _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+				ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 				_setstack.setCount(3);
 				((Slot) _slots.get(2)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 					&& _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+				ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 				_setstack.setCount(3);
 				((Slot) _slots.get(6)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 					&& _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+				ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 				_setstack.setCount(4);
 				((Slot) _slots.get(4)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 					&& _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+				ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 				_setstack.setCount(4);
 				((Slot) _slots.get(8)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 					&& _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+				ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 				_setstack.setCount(3);
 				((Slot) _slots.get(10)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 					&& _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+				ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 				_setstack.setCount(3);
 				((Slot) _slots.get(12)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 					&& _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+				ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 				_setstack.setCount(2);
 				((Slot) _slots.get(14)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 					&& _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+				ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 				_setstack.setCount(2);
 				((Slot) _slots.get(16)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
@@ -111,21 +111,21 @@ public class ConstantcheckProcedure {
 			if (entity.getPersistentData().getDouble("coin1") >= 2) {
 				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 						&& _current.get() instanceof Map _slots) {
-					ItemStack _setstack = new ItemStack(ServerModItems.QUIZAS_DISK.get());
+					ItemStack _setstack = new ItemStack(ServerV5ModItems.QUIZAS_DISK.get());
 					_setstack.setCount(1);
 					((Slot) _slots.get(1)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
 				}
 				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 						&& _current.get() instanceof Map _slots) {
-					ItemStack _setstack = new ItemStack(ServerModItems.RAMMSTEINDISK.get());
+					ItemStack _setstack = new ItemStack(ServerV5ModItems.RAMMSTEINDISK.get());
 					_setstack.setCount(1);
 					((Slot) _slots.get(15)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
 				}
 				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 						&& _current.get() instanceof Map _slots) {
-					ItemStack _setstack = new ItemStack(ServerModItems.BLUR.get());
+					ItemStack _setstack = new ItemStack(ServerV5ModItems.BLUR.get());
 					_setstack.setCount(1);
 					((Slot) _slots.get(17)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
@@ -133,28 +133,28 @@ public class ConstantcheckProcedure {
 				if (entity.getPersistentData().getDouble("coin1") >= 3) {
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.SUFRE_MAMON_DISK.get());
+						ItemStack _setstack = new ItemStack(ServerV5ModItems.SUFRE_MAMON_DISK.get());
 						_setstack.setCount(1);
 						((Slot) _slots.get(3)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.RESISTIREDISK.get());
+						ItemStack _setstack = new ItemStack(ServerV5ModItems.RESISTIREDISK.get());
 						_setstack.setCount(1);
 						((Slot) _slots.get(7)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.DESASTRE.get());
+						ItemStack _setstack = new ItemStack(ServerV5ModItems.DESASTRE.get());
 						_setstack.setCount(1);
 						((Slot) _slots.get(11)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.GREEN_DAYDISK.get());
+						ItemStack _setstack = new ItemStack(ServerV5ModItems.GREEN_DAYDISK.get());
 						_setstack.setCount(1);
 						((Slot) _slots.get(13)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
@@ -162,14 +162,14 @@ public class ConstantcheckProcedure {
 					if (entity.getPersistentData().getDouble("coin1") >= 4) {
 						if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 								&& _current.get() instanceof Map _slots) {
-							ItemStack _setstack = new ItemStack(ServerModItems.PASEPORTUCASADISK.get());
+							ItemStack _setstack = new ItemStack(ServerV5ModItems.PASEPORTUCASADISK.get());
 							_setstack.setCount(1);
 							((Slot) _slots.get(5)).set(_setstack);
 							_player.containerMenu.broadcastChanges();
 						}
 						if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 								&& _current.get() instanceof Map _slots) {
-							ItemStack _setstack = new ItemStack(ServerModItems.ALONE.get());
+							ItemStack _setstack = new ItemStack(ServerV5ModItems.ALONE.get());
 							_setstack.setCount(1);
 							((Slot) _slots.get(9)).set(_setstack);
 							_player.containerMenu.broadcastChanges();
@@ -266,67 +266,67 @@ public class ConstantcheckProcedure {
 				}
 			}
 		} else {
-			if ((entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ServerModVariables.PlayerVariables())).menupage == 1) {
+			if ((entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new ServerV5ModVariables.PlayerVariables())).menupage == 1) {
 				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 						&& _current.get() instanceof Map _slots) {
-					ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+					ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 					_setstack.setCount(1);
 					((Slot) _slots.get(0)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
 				}
 				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 						&& _current.get() instanceof Map _slots) {
-					ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+					ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 					_setstack.setCount(1);
 					((Slot) _slots.get(2)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
 				}
 				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 						&& _current.get() instanceof Map _slots) {
-					ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+					ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 					_setstack.setCount(1);
 					((Slot) _slots.get(4)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
 				}
 				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 						&& _current.get() instanceof Map _slots) {
-					ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+					ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 					_setstack.setCount(1);
 					((Slot) _slots.get(6)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
 				}
 				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 						&& _current.get() instanceof Map _slots) {
-					ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+					ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 					_setstack.setCount(2);
 					((Slot) _slots.get(8)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
 				}
 				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 						&& _current.get() instanceof Map _slots) {
-					ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+					ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 					_setstack.setCount(3);
 					((Slot) _slots.get(10)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
 				}
 				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 						&& _current.get() instanceof Map _slots) {
-					ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+					ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 					_setstack.setCount(2);
 					((Slot) _slots.get(12)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
 				}
 				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 						&& _current.get() instanceof Map _slots) {
-					ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+					ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 					_setstack.setCount(4);
 					((Slot) _slots.get(14)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
 				}
 				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 						&& _current.get() instanceof Map _slots) {
-					ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+					ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 					_setstack.setCount(3);
 					((Slot) _slots.get(16)).set(_setstack);
 					_player.containerMenu.broadcastChanges();
@@ -334,28 +334,28 @@ public class ConstantcheckProcedure {
 				if (entity.getPersistentData().getDouble("coin1") >= 1) {
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.APPLE_STICK.get());
+						ItemStack _setstack = new ItemStack(ServerV5ModItems.APPLE_STICK.get());
 						_setstack.setCount(20);
 						((Slot) _slots.get(1)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.MANZANA_VENENO.get());
+						ItemStack _setstack = new ItemStack(ServerV5ModItems.MANZANA_VENENO.get());
 						_setstack.setCount(8);
 						((Slot) _slots.get(3)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.DAIQUIRI.get());
+						ItemStack _setstack = new ItemStack(ServerV5ModItems.DAIQUIRI.get());
 						_setstack.setCount(8);
 						((Slot) _slots.get(5)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.PIZZA_DOUGH.get());
+						ItemStack _setstack = new ItemStack(ServerV5ModItems.PIZZA_DOUGH.get());
 						_setstack.setCount(10);
 						((Slot) _slots.get(7)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
@@ -363,14 +363,14 @@ public class ConstantcheckProcedure {
 					if (entity.getPersistentData().getDouble("coin1") >= 2) {
 						if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 								&& _current.get() instanceof Map _slots) {
-							ItemStack _setstack = new ItemStack(ServerModItems.THENIGHTSDISK.get());
+							ItemStack _setstack = new ItemStack(ServerV5ModItems.THENIGHTSDISK.get());
 							_setstack.setCount(1);
 							((Slot) _slots.get(9)).set(_setstack);
 							_player.containerMenu.broadcastChanges();
 						}
 						if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 								&& _current.get() instanceof Map _slots) {
-							ItemStack _setstack = new ItemStack(ServerModItems.WAT_SUGARDISK.get());
+							ItemStack _setstack = new ItemStack(ServerV5ModItems.WAT_SUGARDISK.get());
 							_setstack.setCount(1);
 							((Slot) _slots.get(13)).set(_setstack);
 							_player.containerMenu.broadcastChanges();
@@ -378,14 +378,14 @@ public class ConstantcheckProcedure {
 						if (entity.getPersistentData().getDouble("coin1") >= 3) {
 							if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 									&& _current.get() instanceof Map _slots) {
-								ItemStack _setstack = new ItemStack(ServerModItems.MOODDISK.get());
+								ItemStack _setstack = new ItemStack(ServerV5ModItems.MOODDISK.get());
 								_setstack.setCount(1);
 								((Slot) _slots.get(11)).set(_setstack);
 								_player.containerMenu.broadcastChanges();
 							}
 							if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 									&& _current.get() instanceof Map _slots) {
-								ItemStack _setstack = new ItemStack(ServerModItems.IBAIDISK.get());
+								ItemStack _setstack = new ItemStack(ServerV5ModItems.IBAIDISK.get());
 								_setstack.setCount(1);
 								((Slot) _slots.get(17)).set(_setstack);
 								_player.containerMenu.broadcastChanges();
@@ -393,7 +393,7 @@ public class ConstantcheckProcedure {
 							if (entity.getPersistentData().getDouble("coin1") >= 4) {
 								if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 										&& _current.get() instanceof Map _slots) {
-									ItemStack _setstack = new ItemStack(ServerModItems.MONTERO.get());
+									ItemStack _setstack = new ItemStack(ServerV5ModItems.MONTERO.get());
 									_setstack.setCount(1);
 									((Slot) _slots.get(15)).set(_setstack);
 									_player.containerMenu.broadcastChanges();
@@ -497,67 +497,67 @@ public class ConstantcheckProcedure {
 					}
 				}
 			} else {
-				if ((entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ServerModVariables.PlayerVariables())).menupage == 2) {
+				if ((entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new ServerV5ModVariables.PlayerVariables())).menupage == 2) {
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+						ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 						_setstack.setCount(2);
 						((Slot) _slots.get(0)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+						ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 						_setstack.setCount(3);
 						((Slot) _slots.get(2)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+						ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 						_setstack.setCount(3);
 						((Slot) _slots.get(4)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+						ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 						_setstack.setCount(2);
 						((Slot) _slots.get(6)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+						ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 						_setstack.setCount(3);
 						((Slot) _slots.get(8)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+						ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 						_setstack.setCount(1);
 						((Slot) _slots.get(10)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+						ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 						_setstack.setCount(1);
 						((Slot) _slots.get(12)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+						ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 						_setstack.setCount(3);
 						((Slot) _slots.get(14)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+						ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 						_setstack.setCount(2);
 						((Slot) _slots.get(16)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
@@ -580,21 +580,21 @@ public class ConstantcheckProcedure {
 						if (entity.getPersistentData().getDouble("coin1") >= 2) {
 							if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 									&& _current.get() instanceof Map _slots) {
-								ItemStack _setstack = new ItemStack(ServerModItems.CAKEBYTHEOCEAN.get());
+								ItemStack _setstack = new ItemStack(ServerV5ModItems.CAKEBYTHEOCEAN.get());
 								_setstack.setCount(1);
 								((Slot) _slots.get(1)).set(_setstack);
 								_player.containerMenu.broadcastChanges();
 							}
 							if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 									&& _current.get() instanceof Map _slots) {
-								ItemStack _setstack = new ItemStack(ServerModItems.PHINEASDISK.get());
+								ItemStack _setstack = new ItemStack(ServerV5ModItems.PHINEASDISK.get());
 								_setstack.setCount(1);
 								((Slot) _slots.get(7)).set(_setstack);
 								_player.containerMenu.broadcastChanges();
 							}
 							if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 									&& _current.get() instanceof Map _slots) {
-								ItemStack _setstack = new ItemStack(ServerModItems.GOFORWARD.get());
+								ItemStack _setstack = new ItemStack(ServerV5ModItems.GOFORWARD.get());
 								_setstack.setCount(1);
 								((Slot) _slots.get(17)).set(_setstack);
 								_player.containerMenu.broadcastChanges();
@@ -602,28 +602,28 @@ public class ConstantcheckProcedure {
 							if (entity.getPersistentData().getDouble("coin1") >= 3) {
 								if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 										&& _current.get() instanceof Map _slots) {
-									ItemStack _setstack = new ItemStack(ServerModItems.DELGADITO.get());
+									ItemStack _setstack = new ItemStack(ServerV5ModItems.DELGADITO.get());
 									_setstack.setCount(1);
 									((Slot) _slots.get(3)).set(_setstack);
 									_player.containerMenu.broadcastChanges();
 								}
 								if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 										&& _current.get() instanceof Map _slots) {
-									ItemStack _setstack = new ItemStack(ServerModItems.RISING_SUN.get());
+									ItemStack _setstack = new ItemStack(ServerV5ModItems.RISING_SUN.get());
 									_setstack.setCount(1);
 									((Slot) _slots.get(5)).set(_setstack);
 									_player.containerMenu.broadcastChanges();
 								}
 								if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 										&& _current.get() instanceof Map _slots) {
-									ItemStack _setstack = new ItemStack(ServerModItems.EL_ANILLO.get());
+									ItemStack _setstack = new ItemStack(ServerV5ModItems.EL_ANILLO.get());
 									_setstack.setCount(1);
 									((Slot) _slots.get(9)).set(_setstack);
 									_player.containerMenu.broadcastChanges();
 								}
 								if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 										&& _current.get() instanceof Map _slots) {
-									ItemStack _setstack = new ItemStack(ServerModItems.PHALLIC_OBJECT.get());
+									ItemStack _setstack = new ItemStack(ServerV5ModItems.PHALLIC_OBJECT.get());
 									_setstack.setCount(1);
 									((Slot) _slots.get(15)).set(_setstack);
 									_player.containerMenu.broadcastChanges();

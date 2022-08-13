@@ -1,0 +1,12 @@
+{
+  "parent": "server_v5:custom/prensa",
+  "textures": {
+    "all": "server_v5:blocks/oak_top",
+    "particle": "server_v5:blocks/oak_top",
+    "0": "server_v5:blocks/prensa",
+    "1": "server_v5:blocks/prensa_1",
+    "2": "server_v5:blocks/prensa_2",
+    "3": "server_v5:blocks/prensa_3",
+    "4": "server_v5:blocks/prensa_4"
+  }
+}

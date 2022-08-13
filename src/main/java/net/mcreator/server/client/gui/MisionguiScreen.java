@@ -12,9 +12,9 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.server.world.inventory.MisionguiMenu;
-import net.mcreator.server.network.ServerModVariables;
+import net.mcreator.server.network.ServerV5ModVariables;
 import net.mcreator.server.network.MisionguiButtonMessage;
-import net.mcreator.server.ServerMod;
+import net.mcreator.server.ServerV5Mod;
 
 import java.util.HashMap;
 
@@ -38,7 +38,7 @@ public class MisionguiScreen extends AbstractContainerScreen<MisionguiMenu> {
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("server:textures/misiongui.png");
+	private static final ResourceLocation texture = new ResourceLocation("server_v5:textures/misiongui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -75,10 +75,10 @@ public class MisionguiScreen extends AbstractContainerScreen<MisionguiMenu> {
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, "Tu misi\uFFFDn es coneguir", 4, 4, -12829636);
 		this.font.draw(poseStack,
-				"" + ((entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ServerModVariables.PlayerVariables())).n_mission) + " de "
-						+ ((entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new ServerModVariables.PlayerVariables())).objetomision)
+				"" + ((entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new ServerV5ModVariables.PlayerVariables())).n_mission) + " de "
+						+ ((entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+								.orElse(new ServerV5ModVariables.PlayerVariables())).objetomision)
 						+ "",
 				4, 15, -12829636);
 	}
@@ -95,7 +95,7 @@ public class MisionguiScreen extends AbstractContainerScreen<MisionguiMenu> {
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 		this.addRenderableWidget(new Button(this.leftPos + 53, this.topPos + 29, 70, 20, new TextComponent("Completar"), e -> {
 			if (true) {
-				ServerMod.PACKET_HANDLER.sendToServer(new MisionguiButtonMessage(0, x, y, z));
+				ServerV5Mod.PACKET_HANDLER.sendToServer(new MisionguiButtonMessage(0, x, y, z));
 				MisionguiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}));

@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.server.world.inventory.BuyguiMenu;
 import net.mcreator.server.procedures.TradedoneProcedure;
-import net.mcreator.server.ServerMod;
+import net.mcreator.server.ServerV5Mod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
@@ -78,6 +78,6 @@ public class BuyguiSlotMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ServerMod.addNetworkMessage(BuyguiSlotMessage.class, BuyguiSlotMessage::buffer, BuyguiSlotMessage::new, BuyguiSlotMessage::handler);
+		ServerV5Mod.addNetworkMessage(BuyguiSlotMessage.class, BuyguiSlotMessage::buffer, BuyguiSlotMessage::new, BuyguiSlotMessage::handler);
 	}
 }

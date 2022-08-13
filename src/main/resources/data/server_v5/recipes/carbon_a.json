@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 2,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "minecraft:coal"
+  },
+  "result": "server_v5:carbon_ahumado"
+}

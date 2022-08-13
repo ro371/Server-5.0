@@ -10,8 +10,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 
-import net.mcreator.server.network.ServerModVariables;
-import net.mcreator.server.init.ServerModItems;
+import net.mcreator.server.network.ServerV5ModVariables;
+import net.mcreator.server.init.ServerV5ModItems;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -31,8 +31,8 @@ public class DoneProcedure {
 				return 0;
 			}
 		}.getAmount(0) >= 16) {
-			if (7 == (entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ServerModVariables.PlayerVariables())).misionchosen) {
+			if (7 == (entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new ServerV5ModVariables.PlayerVariables())).misionchosen) {
 				if (Items.COD == (entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
 						&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()) {
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
@@ -41,12 +41,12 @@ public class DoneProcedure {
 						_player.containerMenu.broadcastChanges();
 					}
 					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+						ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 						_setstack.setCount(1);
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					if (entity instanceof Player _player) {
-						ItemStack _stktoremove = new ItemStack(ServerModItems.MISIONFISH.get());
+						ItemStack _stktoremove = new ItemStack(ServerV5ModItems.MISIONFISH.get());
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 								_player.inventoryMenu.getCraftSlots());
 					}
@@ -98,8 +98,8 @@ public class DoneProcedure {
 								return 0;
 							}
 						}.getAmount(3) == 64) {
-							if (3 == (entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ServerModVariables.PlayerVariables())).misionchosen) {
+							if (3 == (entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+									.orElse(new ServerV5ModVariables.PlayerVariables())).misionchosen) {
 								if (Items.WHEAT_SEEDS == (entity instanceof ServerPlayer _plrSlotItem
 										&& _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
 												? ((Slot) _slt.get(0)).getItem()
@@ -141,12 +141,12 @@ public class DoneProcedure {
 										_player.containerMenu.broadcastChanges();
 									}
 									if (entity instanceof Player _player) {
-										ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+										ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 										_setstack.setCount(1);
 										ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 									}
 									if (entity instanceof Player _player) {
-										ItemStack _stktoremove = new ItemStack(ServerModItems.MISION_SEEDS.get());
+										ItemStack _stktoremove = new ItemStack(ServerV5ModItems.MISION_SEEDS.get());
 										_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 												_player.inventoryMenu.getCraftSlots());
 									}
@@ -154,8 +154,8 @@ public class DoneProcedure {
 										_player.closeContainer();
 								}
 							} else {
-								if (6 == (entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new ServerModVariables.PlayerVariables())).misionchosen) {
+								if (6 == (entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new ServerV5ModVariables.PlayerVariables())).misionchosen) {
 									if (Blocks.COBBLESTONE
 											.asItem() == (entity instanceof ServerPlayer _plrSlotItem
 													&& _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
@@ -198,12 +198,12 @@ public class DoneProcedure {
 											_player.containerMenu.broadcastChanges();
 										}
 										if (entity instanceof Player _player) {
-											ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+											ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 											_setstack.setCount(1);
 											ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 										}
 										if (entity instanceof Player _player) {
-											ItemStack _stktoremove = new ItemStack(ServerModItems.MISIONSTONE.get());
+											ItemStack _stktoremove = new ItemStack(ServerV5ModItems.MISIONSTONE.get());
 											_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 													_player.inventoryMenu.getCraftSlots());
 										}
@@ -213,8 +213,8 @@ public class DoneProcedure {
 								}
 							}
 						}
-						if (1 == (entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new ServerModVariables.PlayerVariables())).misionchosen) {
+						if (1 == (entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+								.orElse(new ServerV5ModVariables.PlayerVariables())).misionchosen) {
 							if (Items.WHEAT == (entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
 									&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()
 									&& Items.WHEAT == (entity instanceof ServerPlayer _plrSlotItem
@@ -243,12 +243,12 @@ public class DoneProcedure {
 									_player.containerMenu.broadcastChanges();
 								}
 								if (entity instanceof Player _player) {
-									ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+									ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 									_setstack.setCount(1);
 									ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 								}
 								if (entity instanceof Player _player) {
-									ItemStack _stktoremove = new ItemStack(ServerModItems.MISIONWHEAT.get());
+									ItemStack _stktoremove = new ItemStack(ServerV5ModItems.MISIONWHEAT.get());
 									_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 											_player.inventoryMenu.getCraftSlots());
 								}
@@ -257,8 +257,8 @@ public class DoneProcedure {
 							}
 						}
 					}
-					if (2 == (entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new ServerModVariables.PlayerVariables())).misionchosen) {
+					if (2 == (entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ServerV5ModVariables.PlayerVariables())).misionchosen) {
 						if (Blocks.PUMPKIN
 								.asItem() == (entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
 										&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()
@@ -278,12 +278,12 @@ public class DoneProcedure {
 								_player.containerMenu.broadcastChanges();
 							}
 							if (entity instanceof Player _player) {
-								ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+								ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 								_setstack.setCount(1);
 								ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 							}
 							if (entity instanceof Player _player) {
-								ItemStack _stktoremove = new ItemStack(ServerModItems.MISIONPUMPKIN.get());
+								ItemStack _stktoremove = new ItemStack(ServerV5ModItems.MISIONPUMPKIN.get());
 								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 										_player.inventoryMenu.getCraftSlots());
 							}
@@ -291,8 +291,8 @@ public class DoneProcedure {
 								_player.closeContainer();
 						}
 					}
-					if (4 == (entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new ServerModVariables.PlayerVariables())).misionchosen) {
+					if (4 == (entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ServerV5ModVariables.PlayerVariables())).misionchosen) {
 						if (Blocks.MELON
 								.asItem() == (entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
 										&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()
@@ -312,12 +312,12 @@ public class DoneProcedure {
 								_player.containerMenu.broadcastChanges();
 							}
 							if (entity instanceof Player _player) {
-								ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+								ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 								_setstack.setCount(1);
 								ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 							}
 							if (entity instanceof Player _player) {
-								ItemStack _stktoremove = new ItemStack(ServerModItems.MISIONMELON.get());
+								ItemStack _stktoremove = new ItemStack(ServerV5ModItems.MISIONMELON.get());
 								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 										_player.inventoryMenu.getCraftSlots());
 							}
@@ -325,8 +325,8 @@ public class DoneProcedure {
 								_player.closeContainer();
 						}
 					}
-					if (5 == (entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new ServerModVariables.PlayerVariables())).misionchosen) {
+					if (5 == (entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ServerV5ModVariables.PlayerVariables())).misionchosen) {
 						if (Blocks.SUGAR_CANE
 								.asItem() == (entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
 										&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()
@@ -346,12 +346,12 @@ public class DoneProcedure {
 								_player.containerMenu.broadcastChanges();
 							}
 							if (entity instanceof Player _player) {
-								ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+								ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 								_setstack.setCount(1);
 								ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 							}
 							if (entity instanceof Player _player) {
-								ItemStack _stktoremove = new ItemStack(ServerModItems.MISIONSUGAR.get());
+								ItemStack _stktoremove = new ItemStack(ServerV5ModItems.MISIONSUGAR.get());
 								_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 										_player.inventoryMenu.getCraftSlots());
 							}
@@ -360,9 +360,9 @@ public class DoneProcedure {
 						}
 					}
 				}
-				if (0 == (entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ServerModVariables.PlayerVariables())).misionchosen) {
-					if (ServerModItems.CARBON_AHUMADO
+				if (0 == (entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new ServerV5ModVariables.PlayerVariables())).misionchosen) {
+					if (ServerV5ModItems.CARBON_AHUMADO
 							.get() == (entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
 									&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem()) {
 						if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
@@ -371,12 +371,12 @@ public class DoneProcedure {
 							_player.containerMenu.broadcastChanges();
 						}
 						if (entity instanceof Player _player) {
-							ItemStack _setstack = new ItemStack(ServerModItems.COIN_1.get());
+							ItemStack _setstack = new ItemStack(ServerV5ModItems.COIN_1.get());
 							_setstack.setCount(1);
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(ServerModItems.MISION.get());
+							ItemStack _stktoremove = new ItemStack(ServerV5ModItems.MISION.get());
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 									_player.inventoryMenu.getCraftSlots());
 						}

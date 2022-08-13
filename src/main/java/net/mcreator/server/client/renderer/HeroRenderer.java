@@ -20,13 +20,13 @@ public class HeroRenderer extends HumanoidMobRenderer<HeroEntity, HumanoidModel<
 		this.addLayer(new EyesLayer<HeroEntity, HumanoidModel<HeroEntity>>(this) {
 			@Override
 			public RenderType renderType() {
-				return RenderType.eyes(new ResourceLocation("server:textures/pixil-frame-0_3.png"));
+				return RenderType.eyes(new ResourceLocation("server_v5:textures/pixil-frame-0_3.png"));
 			}
 		});
 	}
 
 	@Override
 	public ResourceLocation getTextureLocation(HeroEntity entity) {
-		return new ResourceLocation("server:textures/2019_02_25_herobrine-12823413.png");
+		return new ResourceLocation("server_v5:textures/2019_02_25_herobrine-12823413.png");
 	}
 }

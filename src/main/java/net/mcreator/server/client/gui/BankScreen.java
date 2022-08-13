@@ -33,7 +33,7 @@ public class BankScreen extends AbstractContainerScreen<BankMenu> {
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("server:textures/bank.png");
+	private static final ResourceLocation texture = new ResourceLocation("server_v5:textures/bank.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -50,22 +50,22 @@ public class BankScreen extends AbstractContainerScreen<BankMenu> {
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("server:textures/arrow_hd.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("server_v5:textures/arrow_hd.png"));
 		this.blit(ms, this.leftPos + -90, this.topPos + -91, 0, 0, 256, 256, 256, 256);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("server:textures/arrow_hd2.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("server_v5:textures/arrow_hd2.png"));
 		this.blit(ms, this.leftPos + -89, this.topPos + -66, 0, 0, 256, 256, 256, 256);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("server:textures/coin.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("server_v5:textures/coin.png"));
 		this.blit(ms, this.leftPos + 24, this.topPos + 53, 0, 0, 256, 256, 256, 256);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("server:textures/coin_.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("server_v5:textures/coin_.png"));
 		this.blit(ms, this.leftPos + 79, this.topPos + 26, 0, 0, 256, 256, 256, 256);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("server:textures/coin_1.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("server_v5:textures/coin_1.png"));
 		this.blit(ms, this.leftPos + 24, this.topPos + 27, 0, 0, 256, 256, 256, 256);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("server:textures/coin_1_.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("server_v5:textures/coin_1_.png"));
 		this.blit(ms, this.leftPos + 79, this.topPos + 54, 0, 0, 256, 256, 256, 256);
 
 		RenderSystem.disableBlend();

@@ -12,14 +12,14 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 
-import net.mcreator.server.init.ServerModItems;
+import net.mcreator.server.init.ServerV5ModItems;
 
 public class HotPotatoLivingEntityIsHitWithItemProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
 		if (sourceentity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(ServerModItems.CARBON_AHUMADO.get());
+			ItemStack _stktoremove = new ItemStack(ServerV5ModItems.CARBON_AHUMADO.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		new Object() {

@@ -20,7 +20,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.server.procedures.MisionguiThisGUIIsOpenedProcedure;
 import net.mcreator.server.procedures.MisionguiThisGUIIsClosedProcedure;
-import net.mcreator.server.init.ServerModMenus;
+import net.mcreator.server.init.ServerV5ModMenus;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -36,7 +36,7 @@ public class MisionguiMenu extends AbstractContainerMenu implements Supplier<Map
 	private boolean bound = false;
 
 	public MisionguiMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(ServerModMenus.MISIONGUI, id);
+		super(ServerV5ModMenus.MISIONGUI, id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
 		this.internal = new ItemStackHandler(5);

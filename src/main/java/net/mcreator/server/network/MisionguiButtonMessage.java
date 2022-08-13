@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.server.world.inventory.MisionguiMenu;
 import net.mcreator.server.procedures.DoneProcedure;
-import net.mcreator.server.ServerMod;
+import net.mcreator.server.ServerV5Mod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
@@ -70,7 +70,7 @@ public class MisionguiButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ServerMod.addNetworkMessage(MisionguiButtonMessage.class, MisionguiButtonMessage::buffer, MisionguiButtonMessage::new,
+		ServerV5Mod.addNetworkMessage(MisionguiButtonMessage.class, MisionguiButtonMessage::buffer, MisionguiButtonMessage::new,
 				MisionguiButtonMessage::handler);
 	}
 }

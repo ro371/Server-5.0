@@ -10,7 +10,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.server.network.ServerModVariables;
+import net.mcreator.server.network.ServerV5ModVariables;
 
 import javax.annotation.Nullable;
 
@@ -50,28 +50,28 @@ public class StayProcedure {
 
 			private void run() {
 				{
-					double _setval = (entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new ServerModVariables.PlayerVariables())).time + 1;
-					entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					double _setval = (entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ServerV5ModVariables.PlayerVariables())).time + 1;
+					entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.time = _setval;
 						capability.syncPlayerVariables(entity);
 					});
 				}
-				if ((entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ServerModVariables.PlayerVariables())).time >= 90) {
+				if ((entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new ServerV5ModVariables.PlayerVariables())).time >= 90) {
 					if (Math.random() < 0.85) {
 						{
-							double _setval = (entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ServerModVariables.PlayerVariables())).coin1 + 1;
-							entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							double _setval = (entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+									.orElse(new ServerV5ModVariables.PlayerVariables())).missions + 1;
+							entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 								capability.coin1 = _setval;
 								capability.syncPlayerVariables(entity);
 							});
 						}
 						{
-							double _setval = (entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ServerModVariables.PlayerVariables())).time - 90;
-							entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							double _setval = (entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+									.orElse(new ServerV5ModVariables.PlayerVariables())).time - 90;
+							entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 								capability.time = _setval;
 								capability.syncPlayerVariables(entity);
 							});

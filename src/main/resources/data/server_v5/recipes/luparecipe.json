@@ -1,0 +1,24 @@
+{
+  "group": "minas",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 4 ",
+    "6  "
+  ],
+  "key": {
+    "2": {
+      "item": "minecraft:glass"
+    },
+    "4": {
+      "item": "minecraft:iron_ingot"
+    },
+    "6": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "server_v5:lupa",
+    "count": 1
+  }
+}

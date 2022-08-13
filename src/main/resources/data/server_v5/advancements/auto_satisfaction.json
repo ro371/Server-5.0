@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "auto_satisfaction": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "server_v5:phallic_object"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 30
+  }
+}

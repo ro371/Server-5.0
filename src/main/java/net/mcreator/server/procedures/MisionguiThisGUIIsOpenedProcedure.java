@@ -12,8 +12,8 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 
-import net.mcreator.server.network.ServerModVariables;
-import net.mcreator.server.init.ServerModItems;
+import net.mcreator.server.network.ServerV5ModVariables;
+import net.mcreator.server.init.ServerV5ModItems;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -43,18 +43,18 @@ public class MisionguiThisGUIIsOpenedProcedure {
 			}
 
 			private void run() {
-				if ((entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ServerModVariables.PlayerVariables())).misionchosen == 0) {
+				if ((entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new ServerV5ModVariables.PlayerVariables())).misionchosen == 0) {
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
-						ItemStack _setstack = new ItemStack(ServerModItems.CARBON_AHUMADO.get());
+						ItemStack _setstack = new ItemStack(ServerV5ModItems.CARBON_AHUMADO.get());
 						_setstack.setCount(64);
 						((Slot) _slots.get(4)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
 					}
 				} else {
-					if ((entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new ServerModVariables.PlayerVariables())).misionchosen == 1) {
+					if ((entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ServerV5ModVariables.PlayerVariables())).misionchosen == 1) {
 						if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 								&& _current.get() instanceof Map _slots) {
 							ItemStack _setstack = new ItemStack(Items.WHEAT);
@@ -63,8 +63,8 @@ public class MisionguiThisGUIIsOpenedProcedure {
 							_player.containerMenu.broadcastChanges();
 						}
 					} else {
-						if ((entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new ServerModVariables.PlayerVariables())).misionchosen == 2) {
+						if ((entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+								.orElse(new ServerV5ModVariables.PlayerVariables())).misionchosen == 2) {
 							if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 									&& _current.get() instanceof Map _slots) {
 								ItemStack _setstack = new ItemStack(Blocks.PUMPKIN);
@@ -73,8 +73,8 @@ public class MisionguiThisGUIIsOpenedProcedure {
 								_player.containerMenu.broadcastChanges();
 							}
 						} else {
-							if ((entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ServerModVariables.PlayerVariables())).misionchosen == 3) {
+							if ((entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+									.orElse(new ServerV5ModVariables.PlayerVariables())).misionchosen == 3) {
 								if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 										&& _current.get() instanceof Map _slots) {
 									ItemStack _setstack = new ItemStack(Items.WHEAT_SEEDS);
@@ -83,8 +83,8 @@ public class MisionguiThisGUIIsOpenedProcedure {
 									_player.containerMenu.broadcastChanges();
 								}
 							} else {
-								if ((entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new ServerModVariables.PlayerVariables())).misionchosen == 4) {
+								if ((entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new ServerV5ModVariables.PlayerVariables())).misionchosen == 4) {
 									if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 											&& _current.get() instanceof Map _slots) {
 										ItemStack _setstack = new ItemStack(Blocks.MELON);
@@ -93,8 +93,8 @@ public class MisionguiThisGUIIsOpenedProcedure {
 										_player.containerMenu.broadcastChanges();
 									}
 								} else {
-									if ((entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new ServerModVariables.PlayerVariables())).misionchosen == 5) {
+									if ((entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+											.orElse(new ServerV5ModVariables.PlayerVariables())).misionchosen == 5) {
 										if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 												&& _current.get() instanceof Map _slots) {
 											ItemStack _setstack = new ItemStack(Blocks.SUGAR_CANE);
@@ -103,8 +103,8 @@ public class MisionguiThisGUIIsOpenedProcedure {
 											_player.containerMenu.broadcastChanges();
 										}
 									} else {
-										if ((entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-												.orElse(new ServerModVariables.PlayerVariables())).misionchosen == 6) {
+										if ((entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+												.orElse(new ServerV5ModVariables.PlayerVariables())).misionchosen == 6) {
 											if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 													&& _current.get() instanceof Map _slots) {
 												ItemStack _setstack = new ItemStack(Blocks.COBBLESTONE);
@@ -113,8 +113,8 @@ public class MisionguiThisGUIIsOpenedProcedure {
 												_player.containerMenu.broadcastChanges();
 											}
 										} else {
-											if ((entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-													.orElse(new ServerModVariables.PlayerVariables())).misionchosen == 7) {
+											if ((entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+													.orElse(new ServerV5ModVariables.PlayerVariables())).misionchosen == 7) {
 												if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 														&& _current.get() instanceof Map _slots) {
 													ItemStack _setstack = new ItemStack(Items.COD);

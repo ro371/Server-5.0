@@ -21,7 +21,7 @@ import net.mcreator.server.procedures.Itemtaken4Procedure;
 import net.mcreator.server.procedures.Itemtaken3Procedure;
 import net.mcreator.server.procedures.Itemtaken2Procedure;
 import net.mcreator.server.procedures.Itemtaken1Procedure;
-import net.mcreator.server.ServerMod;
+import net.mcreator.server.ServerV5Mod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
@@ -118,6 +118,6 @@ public class ShopSlotMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ServerMod.addNetworkMessage(ShopSlotMessage.class, ShopSlotMessage::buffer, ShopSlotMessage::new, ShopSlotMessage::handler);
+		ServerV5Mod.addNetworkMessage(ShopSlotMessage.class, ShopSlotMessage::buffer, ShopSlotMessage::new, ShopSlotMessage::handler);
 	}
 }

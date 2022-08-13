@@ -14,16 +14,16 @@ import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.server.init.ServerModItems;
-import net.mcreator.server.init.ServerModFluids;
-import net.mcreator.server.init.ServerModBlocks;
+import net.mcreator.server.init.ServerV5ModItems;
+import net.mcreator.server.init.ServerV5ModFluids;
+import net.mcreator.server.init.ServerV5ModBlocks;
 import net.mcreator.server.fluid.attributes.AGUACALIENTEFluidAttributes;
 
 public abstract class AGUACALIENTEFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ServerModFluids.AGUACALIENTE,
-			ServerModFluids.FLOWING_AGUACALIENTE,
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(ServerV5ModFluids.AGUACALIENTE,
+			ServerV5ModFluids.FLOWING_AGUACALIENTE,
 			AGUACALIENTEFluidAttributes
-					.builder(new ResourceLocation("server:blocks/static_water"), new ResourceLocation("server:blocks/flowing_hot_water"))
+					.builder(new ResourceLocation("server_v5:blocks/static_water"), new ResourceLocation("server_v5:blocks/flowing_hot_water"))
 					.luminosity(4)
 
 					.viscosity(600).temperature(400)
@@ -31,7 +31,7 @@ public abstract class AGUACALIENTEFluid extends ForgeFlowingFluid {
 					.color(-13083194))
 			.explosionResistance(100f)
 
-			.bucket(ServerModItems.AGUACALIENTE_BUCKET).block(() -> (LiquidBlock) ServerModBlocks.AGUACALIENTE.get());
+			.bucket(ServerV5ModItems.AGUACALIENTE_BUCKET).block(() -> (LiquidBlock) ServerV5ModBlocks.AGUACALIENTE.get());
 
 	private AGUACALIENTEFluid() {
 		super(PROPERTIES);

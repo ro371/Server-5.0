@@ -28,7 +28,7 @@ import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.server.procedures.VentOnBlockRightClickedProcedure;
 import net.mcreator.server.procedures.VentBlockDestroyedByPlayerProcedure;
-import net.mcreator.server.init.ServerModBlocks;
+import net.mcreator.server.init.ServerV5ModBlocks;
 
 import java.util.List;
 import java.util.Collections;
@@ -93,6 +93,6 @@ public class VentBlock extends TrapDoorBlock {
 
 	@OnlyIn(Dist.CLIENT)
 	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ServerModBlocks.VENT.get(), renderType -> renderType == RenderType.cutout());
+		ItemBlockRenderTypes.setRenderLayer(ServerV5ModBlocks.VENT.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

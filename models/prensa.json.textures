@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "prensa",
+        "1": "prensa_1",
+        "2": "prensa_2",
+        "3": "prensa_3",
+        "4": "prensa_4"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -11,7 +11,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.server.init.ServerModItems;
+import net.mcreator.server.init.ServerV5ModItems;
 
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -22,7 +22,7 @@ public class CreatemissionProcedure {
 		double num = 0;
 		double perg = 0;
 		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(ServerModItems.PERGAMINO.get());
+			ItemStack _stktoremove = new ItemStack(ServerV5ModItems.PERGAMINO.get());
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		num = Math.random();
@@ -33,7 +33,7 @@ public class CreatemissionProcedure {
 			if (_iitemhandlerref.get() != null) {
 				for (int _idx = 0; _idx < _iitemhandlerref.get().getSlots(); _idx++) {
 					ItemStack itemstackiterator = _iitemhandlerref.get().getStackInSlot(_idx).copy();
-					if (ServerModItems.PERGAMINO.get() == itemstackiterator.getItem()) {
+					if (ServerV5ModItems.PERGAMINO.get() == itemstackiterator.getItem()) {
 						perg = perg + (itemstackiterator).getCount();
 					}
 				}
@@ -42,56 +42,56 @@ public class CreatemissionProcedure {
 		if (perg >= 1) {
 			if (num < 0.125) {
 				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(ServerModItems.MISION.get());
+					ItemStack _setstack = new ItemStack(ServerV5ModItems.MISION.get());
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
 			} else {
 				if (num < 0.25) {
 					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(ServerModItems.MISIONWHEAT.get());
+						ItemStack _setstack = new ItemStack(ServerV5ModItems.MISIONWHEAT.get());
 						_setstack.setCount(1);
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				} else {
 					if (num < 0.375) {
 						if (entity instanceof Player _player) {
-							ItemStack _setstack = new ItemStack(ServerModItems.MISIONPUMPKIN.get());
+							ItemStack _setstack = new ItemStack(ServerV5ModItems.MISIONPUMPKIN.get());
 							_setstack.setCount(1);
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 					} else {
 						if (num < 0.5) {
 							if (entity instanceof Player _player) {
-								ItemStack _setstack = new ItemStack(ServerModItems.MISION_SEEDS.get());
+								ItemStack _setstack = new ItemStack(ServerV5ModItems.MISION_SEEDS.get());
 								_setstack.setCount(1);
 								ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 							}
 						} else {
 							if (num < 0.625) {
 								if (entity instanceof Player _player) {
-									ItemStack _setstack = new ItemStack(ServerModItems.MISIONMELON.get());
+									ItemStack _setstack = new ItemStack(ServerV5ModItems.MISIONMELON.get());
 									_setstack.setCount(1);
 									ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 								}
 							} else {
 								if (num < 0.75) {
 									if (entity instanceof Player _player) {
-										ItemStack _setstack = new ItemStack(ServerModItems.MISIONSUGAR.get());
+										ItemStack _setstack = new ItemStack(ServerV5ModItems.MISIONSUGAR.get());
 										_setstack.setCount(1);
 										ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 									}
 								} else {
 									if (num < 0.875) {
 										if (entity instanceof Player _player) {
-											ItemStack _setstack = new ItemStack(ServerModItems.MISIONSTONE.get());
+											ItemStack _setstack = new ItemStack(ServerV5ModItems.MISIONSTONE.get());
 											_setstack.setCount(1);
 											ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 										}
 									} else {
 										if (num < 1) {
 											if (entity instanceof Player _player) {
-												ItemStack _setstack = new ItemStack(ServerModItems.MISIONFISH.get());
+												ItemStack _setstack = new ItemStack(ServerV5ModItems.MISIONFISH.get());
 												_setstack.setCount(1);
 												ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 											}
@@ -106,42 +106,42 @@ public class CreatemissionProcedure {
 		} else {
 			if (num < 0.125) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ServerModItems.MISION.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ServerV5ModItems.MISION.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
 			} else {
 				if (num < 0.25) {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ServerModItems.MISIONWHEAT.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ServerV5ModItems.MISIONWHEAT.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
 				} else {
 					if (num < 0.375) {
 						if (world instanceof Level _level && !_level.isClientSide()) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ServerModItems.MISIONPUMPKIN.get()));
+							ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ServerV5ModItems.MISIONPUMPKIN.get()));
 							entityToSpawn.setPickUpDelay(10);
 							_level.addFreshEntity(entityToSpawn);
 						}
 					} else {
 						if (num < 0.5) {
 							if (world instanceof Level _level && !_level.isClientSide()) {
-								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ServerModItems.MISION_SEEDS.get()));
+								ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ServerV5ModItems.MISION_SEEDS.get()));
 								entityToSpawn.setPickUpDelay(10);
 								_level.addFreshEntity(entityToSpawn);
 							}
 						} else {
 							if (num < 0.625) {
 								if (world instanceof Level _level && !_level.isClientSide()) {
-									ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ServerModItems.MISIONMELON.get()));
+									ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ServerV5ModItems.MISIONMELON.get()));
 									entityToSpawn.setPickUpDelay(10);
 									_level.addFreshEntity(entityToSpawn);
 								}
 							} else {
 								if (num < 0.75) {
 									if (world instanceof Level _level && !_level.isClientSide()) {
-										ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ServerModItems.MISIONSUGAR.get()));
+										ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ServerV5ModItems.MISIONSUGAR.get()));
 										entityToSpawn.setPickUpDelay(10);
 										_level.addFreshEntity(entityToSpawn);
 									}
@@ -149,7 +149,7 @@ public class CreatemissionProcedure {
 									if (num < 0.875) {
 										if (world instanceof Level _level && !_level.isClientSide()) {
 											ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
-													new ItemStack(ServerModItems.MISIONSTONE.get()));
+													new ItemStack(ServerV5ModItems.MISIONSTONE.get()));
 											entityToSpawn.setPickUpDelay(10);
 											_level.addFreshEntity(entityToSpawn);
 										}
@@ -157,7 +157,7 @@ public class CreatemissionProcedure {
 										if (num < 1) {
 											if (world instanceof Level _level && !_level.isClientSide()) {
 												ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
-														new ItemStack(ServerModItems.MISIONFISH.get()));
+														new ItemStack(ServerV5ModItems.MISIONFISH.get()));
 												entityToSpawn.setPickUpDelay(10);
 												_level.addFreshEntity(entityToSpawn);
 											}

@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.server.world.inventory.SellguiMenu;
 import net.mcreator.server.procedures.BreakshopProcedure;
-import net.mcreator.server.ServerMod;
+import net.mcreator.server.ServerV5Mod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
@@ -70,7 +70,7 @@ public class SellguiButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ServerMod.addNetworkMessage(SellguiButtonMessage.class, SellguiButtonMessage::buffer, SellguiButtonMessage::new,
+		ServerV5Mod.addNetworkMessage(SellguiButtonMessage.class, SellguiButtonMessage::buffer, SellguiButtonMessage::new,
 				SellguiButtonMessage::handler);
 	}
 }

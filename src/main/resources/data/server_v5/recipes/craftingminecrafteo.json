@@ -1,0 +1,16 @@
+{
+  "group": "minas",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "server_v5:mine"
+    },
+    {
+      "item": "minecraft:crafting_table"
+    }
+  ],
+  "result": {
+    "item": "server_v5:craftingmine",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:red_dye"
+    },
+    {
+      "item": "server_v5:pizza_dough"
+    },
+    {
+      "item": "server_v5:medium_pizza"
+    },
+    {
+      "item": "server_v5:pizza_dough"
+    },
+    {
+      "item": "minecraft:wheat_seeds"
+    }
+  ],
+  "result": {
+    "item": "server_v5:big_pizza",
+    "count": 1
+  }
+}

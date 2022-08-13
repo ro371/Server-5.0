@@ -23,7 +23,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.server.world.inventory.SellguiMenu;
-import net.mcreator.server.init.ServerModBlockEntities;
+import net.mcreator.server.init.ServerV5ModBlockEntities;
 
 import javax.annotation.Nullable;
 
@@ -36,7 +36,7 @@ public class SellBlockEntity extends RandomizableContainerBlockEntity implements
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public SellBlockEntity(BlockPos position, BlockState state) {
-		super(ServerModBlockEntities.SELL.get(), position, state);
+		super(ServerV5ModBlockEntities.SELL.get(), position, state);
 	}
 
 	@Override

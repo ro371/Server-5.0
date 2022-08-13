@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "server_v5:blocks/mena_de_diamante",
+    "up": "server_v5:blocks/mena_de_diamante",
+    "north": "server_v5:blocks/mena_de_diamante",
+    "east": "server_v5:blocks/mena_de_diamante",
+    "south": "server_v5:blocks/mena_de_diamante",
+    "west": "server_v5:blocks/mena_de_diamante",
+    "particle": "server_v5:blocks/mena_de_diamante"
+  }
+}

@@ -17,7 +17,7 @@ public class StopPoliciaMobEffect extends MobEffect {
 
 	@Override
 	public String getDescriptionId() {
-		return "effect.server.alto_policia";
+		return "effect.server_v5.alto_policia";
 	}
 
 	@Override

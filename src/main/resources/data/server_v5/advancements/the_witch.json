@@ -1,0 +1,56 @@
+{
+  "criteria": {
+    "the_witch": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "server_v5:poisondrops"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1000
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5,
+    "recipes": [
+      "server_v5:daiquirivenenorecipe",
+      "server_v5:gintonicvenenorecipe",
+      "server_v5:spaguettivenenorecipe",
+      "server_v5:applepievenenorecipe",
+      "server_v5:vasodeaguavenenorecipe",
+      "server_v5:smallpizzavenenorecipe",
+      "server_v5:mediumpizzavenenorecipe",
+      "server_v5:bigpizzavenenorecipe",
+      "server_v5:fishstickvenenorecipe",
+      "server_v5:burnpoison",
+      "server_v5:poison_dropsmake",
+      "server_v5:poisondroprecipe",
+      "server_v5:hotpotato_recipe",
+      "server_v5:pastillarecipe",
+      "server_v5:pastillahealrecipe",
+      "server_v5:pastillavenomrecipe",
+      "server_v5:pastillaflyrecipe",
+      "server_v5:burnglobefish",
+      "server_v5:greendye",
+      "server_v5:poison_drop_craft_recipe",
+      "server_v5:vaso_2venenorecipe",
+      "server_v5:vaso_2venomrecipe",
+      "server_v5:vasodeaguaflyvenomrecipe",
+      "server_v5:vasodeaguaflyvenom_2",
+      "server_v5:vasodeaguaflyvenomrecipe_3",
+      "server_v5:manzanavenenorecipe",
+      "server_v5:preso_armor_helmet_recipe",
+      "server_v5:preso_armor_body_recipe",
+      "server_v5:preso_armor_leggings_recipe",
+      "server_v5:preso_armor_boots_recipe"
+    ]
+  },
+  "parent": "server_v5:the_beginning"
+}

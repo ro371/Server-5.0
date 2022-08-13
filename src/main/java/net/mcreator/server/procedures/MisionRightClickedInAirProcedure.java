@@ -15,7 +15,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.server.world.inventory.MisionguiMenu;
-import net.mcreator.server.network.ServerModVariables;
+import net.mcreator.server.network.ServerV5ModVariables;
 
 import io.netty.buffer.Unpooled;
 
@@ -25,21 +25,21 @@ public class MisionRightClickedInAirProcedure {
 			return;
 		{
 			double _setval = 0;
-			entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+			entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.misionchosen = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		{
 			String _setval = "Carb\uFFFDn Ahumado";
-			entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+			entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.objetomision = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		{
 			String _setval = "64";
-			entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+			entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.n_mission = _setval;
 				capability.syncPlayerVariables(entity);
 			});

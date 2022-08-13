@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 2,
+  "cookingtime": 180,
+  "ingredient": {
+    "item": "minecraft:rotten_flesh"
+  },
+  "result": "server_v5:poison_dropitem"
+}

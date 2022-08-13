@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "server_v5:items/botella_de_vino"
+  }
+}

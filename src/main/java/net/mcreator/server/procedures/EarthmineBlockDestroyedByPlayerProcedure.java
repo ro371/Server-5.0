@@ -8,6 +8,8 @@ public class EarthmineBlockDestroyedByPlayerProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double damage = 0;
 		if (world instanceof Level _level && !_level.isClientSide())
+			_level.explode(null, x, y, z, 0, Explosion.BlockInteraction.DESTROY);
+		if (world instanceof Level _level && !_level.isClientSide())
 			_level.explode(null, x, y, z, 5, Explosion.BlockInteraction.NONE);
 	}
 }

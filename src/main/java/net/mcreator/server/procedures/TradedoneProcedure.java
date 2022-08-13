@@ -10,7 +10,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.server.network.ServerModVariables;
+import net.mcreator.server.network.ServerV5ModVariables;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -21,9 +21,12 @@ public class TradedoneProcedure {
 			return;
 		{
 			BlockEntity _ent = world.getBlockEntity(new BlockPos(
-					(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ServerModVariables.PlayerVariables())).x,
-					(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ServerModVariables.PlayerVariables())).y,
-					(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ServerModVariables.PlayerVariables())).z));
+					(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ServerV5ModVariables.PlayerVariables())).x,
+					(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ServerV5ModVariables.PlayerVariables())).y,
+					(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ServerV5ModVariables.PlayerVariables())).z));
 			if (_ent != null) {
 				final int _slotid = 0;
 				final ItemStack _setstack = (new Object() {
@@ -37,12 +40,12 @@ public class TradedoneProcedure {
 					}
 				}.getItemStack(world,
 						new BlockPos(
-								(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new ServerModVariables.PlayerVariables())).x,
-								(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new ServerModVariables.PlayerVariables())).y,
-								(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new ServerModVariables.PlayerVariables())).z),
+								(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new ServerV5ModVariables.PlayerVariables())).x,
+								(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new ServerV5ModVariables.PlayerVariables())).y,
+								(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new ServerV5ModVariables.PlayerVariables())).z),
 						0));
 				_setstack.setCount((int) (new Object() {
 					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
@@ -55,12 +58,12 @@ public class TradedoneProcedure {
 					}
 				}.getAmount(world,
 						new BlockPos(
-								(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new ServerModVariables.PlayerVariables())).x,
-								(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new ServerModVariables.PlayerVariables())).y,
-								(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new ServerModVariables.PlayerVariables())).z),
+								(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new ServerV5ModVariables.PlayerVariables())).x,
+								(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new ServerV5ModVariables.PlayerVariables())).y,
+								(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new ServerV5ModVariables.PlayerVariables())).z),
 						0) - new Object() {
 							public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 								AtomicInteger _retval = new AtomicInteger(0);
@@ -72,12 +75,12 @@ public class TradedoneProcedure {
 							}
 						}.getAmount(world,
 								new BlockPos(
-										(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-												.orElse(new ServerModVariables.PlayerVariables())).x,
-										(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-												.orElse(new ServerModVariables.PlayerVariables())).y,
-										(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-												.orElse(new ServerModVariables.PlayerVariables())).z),
+										(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+												.orElse(new ServerV5ModVariables.PlayerVariables())).x,
+										(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+												.orElse(new ServerV5ModVariables.PlayerVariables())).y,
+										(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+												.orElse(new ServerV5ModVariables.PlayerVariables())).z),
 								1)));
 				_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
 					if (capability instanceof IItemHandlerModifiable)
@@ -87,9 +90,12 @@ public class TradedoneProcedure {
 		}
 		{
 			BlockEntity _ent = world.getBlockEntity(new BlockPos(
-					(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ServerModVariables.PlayerVariables())).x,
-					(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ServerModVariables.PlayerVariables())).y,
-					(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ServerModVariables.PlayerVariables())).z));
+					(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ServerV5ModVariables.PlayerVariables())).x,
+					(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ServerV5ModVariables.PlayerVariables())).y,
+					(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ServerV5ModVariables.PlayerVariables())).z));
 			if (_ent != null) {
 				final int _slotid = 4;
 				final ItemStack _setstack = (new Object() {
@@ -103,12 +109,12 @@ public class TradedoneProcedure {
 					}
 				}.getItemStack(world,
 						new BlockPos(
-								(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new ServerModVariables.PlayerVariables())).x,
-								(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new ServerModVariables.PlayerVariables())).y,
-								(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new ServerModVariables.PlayerVariables())).z),
+								(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new ServerV5ModVariables.PlayerVariables())).x,
+								(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new ServerV5ModVariables.PlayerVariables())).y,
+								(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new ServerV5ModVariables.PlayerVariables())).z),
 						3));
 				_setstack.setCount((int) (new Object() {
 					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
@@ -121,12 +127,12 @@ public class TradedoneProcedure {
 					}
 				}.getAmount(world,
 						new BlockPos(
-								(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new ServerModVariables.PlayerVariables())).x,
-								(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new ServerModVariables.PlayerVariables())).y,
-								(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new ServerModVariables.PlayerVariables())).z),
+								(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new ServerV5ModVariables.PlayerVariables())).x,
+								(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new ServerV5ModVariables.PlayerVariables())).y,
+								(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new ServerV5ModVariables.PlayerVariables())).z),
 						2) + new Object() {
 							public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 								AtomicInteger _retval = new AtomicInteger(0);
@@ -138,12 +144,12 @@ public class TradedoneProcedure {
 							}
 						}.getAmount(world,
 								new BlockPos(
-										(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-												.orElse(new ServerModVariables.PlayerVariables())).x,
-										(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-												.orElse(new ServerModVariables.PlayerVariables())).y,
-										(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-												.orElse(new ServerModVariables.PlayerVariables())).z),
+										(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+												.orElse(new ServerV5ModVariables.PlayerVariables())).x,
+										(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+												.orElse(new ServerV5ModVariables.PlayerVariables())).y,
+										(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+												.orElse(new ServerV5ModVariables.PlayerVariables())).z),
 								4)));
 				_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
 					if (capability instanceof IItemHandlerModifiable)
@@ -161,10 +167,14 @@ public class TradedoneProcedure {
 								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
-			}.getItemStack(world, new BlockPos(
-					(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ServerModVariables.PlayerVariables())).x,
-					(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ServerModVariables.PlayerVariables())).y,
-					(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ServerModVariables.PlayerVariables())).z),
+			}.getItemStack(world,
+					new BlockPos(
+							(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+									.orElse(new ServerV5ModVariables.PlayerVariables())).x,
+							(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+									.orElse(new ServerV5ModVariables.PlayerVariables())).y,
+							(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+									.orElse(new ServerV5ModVariables.PlayerVariables())).z),
 					3));
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
@@ -175,10 +185,14 @@ public class TradedoneProcedure {
 								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
-			}.getAmount(world, new BlockPos(
-					(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ServerModVariables.PlayerVariables())).x,
-					(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ServerModVariables.PlayerVariables())).y,
-					(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ServerModVariables.PlayerVariables())).z),
+			}.getAmount(world,
+					new BlockPos(
+							(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+									.orElse(new ServerV5ModVariables.PlayerVariables())).x,
+							(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+									.orElse(new ServerV5ModVariables.PlayerVariables())).y,
+							(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+									.orElse(new ServerV5ModVariables.PlayerVariables())).z),
 					2), _player.inventoryMenu.getCraftSlots());
 		}
 	}

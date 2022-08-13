@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:hay_block"
+    },
+    "1": {
+      "item": "server_v5:pastilla"
+    },
+    "2": {
+      "item": "minecraft:red_dye"
+    }
+  },
+  "result": {
+    "item": "server_v5:pastilla_heal",
+    "count": 1
+  }
+}

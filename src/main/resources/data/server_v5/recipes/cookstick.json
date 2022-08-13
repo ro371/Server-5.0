@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 2,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "server_v5:dough_stick"
+  },
+  "result": "server_v5:cooked_dough_stick"
+}

@@ -12,10 +12,10 @@ public class MazoRightClickedInAirProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server:orden_en_la_sala")),
-						SoundSource.NEUTRAL, 10, 1);
+				_level.playSound(null, new BlockPos(x, y, z),
+						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server_v5:orden_en_la_sala")), SoundSource.NEUTRAL, 10, 1);
 			} else {
-				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server:orden_en_la_sala")),
+				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server_v5:orden_en_la_sala")),
 						SoundSource.NEUTRAL, 10, 1, false);
 			}
 		}

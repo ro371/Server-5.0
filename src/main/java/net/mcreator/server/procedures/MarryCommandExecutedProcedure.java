@@ -15,7 +15,7 @@ import net.minecraft.network.chat.TextComponent;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
-import net.mcreator.server.network.ServerModVariables;
+import net.mcreator.server.network.ServerV5ModVariables;
 
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.HashMap;
@@ -25,7 +25,7 @@ public class MarryCommandExecutedProcedure {
 		if (entity == null || cmdparams == null)
 			return;
 		double diamond = 0;
-		if ((ServerModVariables.MapVariables.get(world).nameproposal).equals("")) {
+		if ((ServerV5ModVariables.MapVariables.get(world).nameproposal).equals("")) {
 			diamond = 0;
 			{
 				AtomicReference<IItemHandler> _iitemhandlerref = new AtomicReference<>();
@@ -40,8 +40,8 @@ public class MarryCommandExecutedProcedure {
 				}
 			}
 			if (diamond >= 10) {
-				ServerModVariables.MapVariables.get(world).nameproposal = entity.getDisplayName().getString();
-				ServerModVariables.MapVariables.get(world).syncData(world);
+				ServerV5ModVariables.MapVariables.get(world).nameproposal = entity.getDisplayName().getString();
+				ServerV5ModVariables.MapVariables.get(world).syncData(world);
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performCommand(
 							new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""),

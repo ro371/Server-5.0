@@ -33,7 +33,7 @@ public class BuyguiScreen extends AbstractContainerScreen<BuyguiMenu> {
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("server:textures/buygui.png");
+	private static final ResourceLocation texture = new ResourceLocation("server_v5:textures/buygui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {

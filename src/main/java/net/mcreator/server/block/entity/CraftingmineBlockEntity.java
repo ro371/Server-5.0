@@ -22,7 +22,7 @@ import net.minecraft.core.NonNullList;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.server.init.ServerModBlockEntities;
+import net.mcreator.server.init.ServerV5ModBlockEntities;
 
 import javax.annotation.Nullable;
 
@@ -33,7 +33,7 @@ public class CraftingmineBlockEntity extends RandomizableContainerBlockEntity im
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public CraftingmineBlockEntity(BlockPos position, BlockState state) {
-		super(ServerModBlockEntities.CRAFTINGMINE.get(), position, state);
+		super(ServerV5ModBlockEntities.CRAFTINGMINE.get(), position, state);
 	}
 
 	@Override

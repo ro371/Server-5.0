@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "server_v5:pastilla_fly"
+    },
+    {
+      "item": "server_v5:vasodeaguaheal"
+    }
+  ],
+  "result": {
+    "item": "server_v5:vasodeaguaflyheal",
+    "count": 1
+  }
+}

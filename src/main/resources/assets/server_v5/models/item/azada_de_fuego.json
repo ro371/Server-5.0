@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "server_v5:items/azada_de_fuego"
+  }
+}

@@ -18,14 +18,14 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
-import net.mcreator.server.init.ServerModEntities;
+import net.mcreator.server.init.ServerV5ModEntities;
 
 import java.util.Random;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class ArcoDeFuegoEntity extends AbstractArrow implements ItemSupplier {
 	public ArcoDeFuegoEntity(PlayMessages.SpawnEntity packet, Level world) {
-		super(ServerModEntities.ARCO_DE_FUEGO.get(), world);
+		super(ServerV5ModEntities.ARCO_DE_FUEGO.get(), world);
 	}
 
 	public ArcoDeFuegoEntity(EntityType<? extends ArcoDeFuegoEntity> type, Level world) {
@@ -70,7 +70,7 @@ public class ArcoDeFuegoEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	public static ArcoDeFuegoEntity shoot(Level world, LivingEntity entity, Random random, float power, double damage, int knockback) {
-		ArcoDeFuegoEntity entityarrow = new ArcoDeFuegoEntity(ServerModEntities.ARCO_DE_FUEGO.get(), entity, world);
+		ArcoDeFuegoEntity entityarrow = new ArcoDeFuegoEntity(ServerV5ModEntities.ARCO_DE_FUEGO.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setCritArrow(true);
@@ -85,7 +85,7 @@ public class ArcoDeFuegoEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	public static ArcoDeFuegoEntity shoot(LivingEntity entity, LivingEntity target) {
-		ArcoDeFuegoEntity entityarrow = new ArcoDeFuegoEntity(ServerModEntities.ARCO_DE_FUEGO.get(), entity, entity.level);
+		ArcoDeFuegoEntity entityarrow = new ArcoDeFuegoEntity(ServerV5ModEntities.ARCO_DE_FUEGO.get(), entity, entity.level);
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();

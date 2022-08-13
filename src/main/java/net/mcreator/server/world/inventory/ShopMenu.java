@@ -21,8 +21,8 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.server.procedures.ShopThisGUIIsOpenedProcedure;
 import net.mcreator.server.procedures.ShopThisGUIIsClosedProcedure;
 import net.mcreator.server.network.ShopSlotMessage;
-import net.mcreator.server.init.ServerModMenus;
-import net.mcreator.server.ServerMod;
+import net.mcreator.server.init.ServerV5ModMenus;
+import net.mcreator.server.ServerV5Mod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -38,7 +38,7 @@ public class ShopMenu extends AbstractContainerMenu implements Supplier<Map<Inte
 	private boolean bound = false;
 
 	public ShopMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(ServerModMenus.SHOP, id);
+		super(ServerV5ModMenus.SHOP, id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
 		this.internal = new ItemStackHandler(18);
@@ -505,7 +505,7 @@ public class ShopMenu extends AbstractContainerMenu implements Supplier<Map<Inte
 
 	private void slotChanged(int slotid, int ctype, int meta) {
 		if (this.world != null && this.world.isClientSide()) {
-			ServerMod.PACKET_HANDLER.sendToServer(new ShopSlotMessage(slotid, x, y, z, ctype, meta));
+			ServerV5Mod.PACKET_HANDLER.sendToServer(new ShopSlotMessage(slotid, x, y, z, ctype, meta));
 			ShopSlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}

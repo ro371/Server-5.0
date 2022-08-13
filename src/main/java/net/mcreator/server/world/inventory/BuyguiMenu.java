@@ -21,8 +21,8 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.server.procedures.BuyguiThisGUIIsOpenedProcedure;
 import net.mcreator.server.procedures.BuyguiThisGUIIsClosedProcedure;
 import net.mcreator.server.network.BuyguiSlotMessage;
-import net.mcreator.server.init.ServerModMenus;
-import net.mcreator.server.ServerMod;
+import net.mcreator.server.init.ServerV5ModMenus;
+import net.mcreator.server.ServerV5Mod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -38,7 +38,7 @@ public class BuyguiMenu extends AbstractContainerMenu implements Supplier<Map<In
 	private boolean bound = false;
 
 	public BuyguiMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(ServerModMenus.BUYGUI, id);
+		super(ServerV5ModMenus.BUYGUI, id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
 		this.internal = new ItemStackHandler(7);
@@ -257,7 +257,7 @@ public class BuyguiMenu extends AbstractContainerMenu implements Supplier<Map<In
 
 	private void slotChanged(int slotid, int ctype, int meta) {
 		if (this.world != null && this.world.isClientSide()) {
-			ServerMod.PACKET_HANDLER.sendToServer(new BuyguiSlotMessage(slotid, x, y, z, ctype, meta));
+			ServerV5Mod.PACKET_HANDLER.sendToServer(new BuyguiSlotMessage(slotid, x, y, z, ctype, meta));
 			BuyguiSlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}

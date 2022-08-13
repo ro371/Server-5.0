@@ -1,13 +1,13 @@
 {
   "replace": false,
   "values": [
-    "server:vent",
-    "server:cobblemine",
-    "server:furnacemine",
-    "server:stonemine",
-    "server:ironmine",
-    "server:goldmine",
-    "server:diamondmine",
-    "server:quartzmine"
+    "server_v5:vent",
+    "server_v5:cobblemine",
+    "server_v5:furnacemine",
+    "server_v5:stonemine",
+    "server_v5:ironmine",
+    "server_v5:goldmine",
+    "server_v5:diamondmine",
+    "server_v5:quartzmine"
   ]
 }

@@ -12,8 +12,8 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.util.Mth;
 import net.minecraft.server.level.ServerLevel;
 
-import net.mcreator.server.network.ServerModVariables;
-import net.mcreator.server.init.ServerModEntities;
+import net.mcreator.server.network.ServerV5ModVariables;
+import net.mcreator.server.init.ServerV5ModEntities;
 import net.mcreator.server.entity.HeroEntity;
 
 import java.util.Random;
@@ -29,8 +29,8 @@ public class HeroBrineCommandExecutedProcedure {
 			List<? extends Player> _players = new ArrayList<>(world.players());
 			for (Entity entityiterator : _players) {
 				if ((entityiterator.getDisplayName().getString()).equals(cmdparams.containsKey("0") ? cmdparams.get("0").toString() : "")) {
-					ServerModVariables.MapVariables.get(world).HeroTarget = cmdparams.containsKey("0") ? cmdparams.get("0").toString() : "";
-					ServerModVariables.MapVariables.get(world).syncData(world);
+					ServerV5ModVariables.MapVariables.get(world).HeroTarget = cmdparams.containsKey("0") ? cmdparams.get("0").toString() : "";
+					ServerV5ModVariables.MapVariables.get(world).syncData(world);
 					new Object() {
 						private int ticks = 0;
 						private float waitTicks;
@@ -53,7 +53,7 @@ public class HeroBrineCommandExecutedProcedure {
 
 						private void run() {
 							if (world instanceof ServerLevel _level) {
-								Entity entityToSpawn = new HeroEntity(ServerModEntities.HERO.get(), _level);
+								Entity entityToSpawn = new HeroEntity(ServerV5ModEntities.HERO.get(), _level);
 								entityToSpawn.moveTo(Math.round(Mth.nextInt(new Random(), -120, 120) + entityiterator.getX()),
 										Math.round(Mth.nextInt(new Random(), 0, 10) + entityiterator.getY()),
 										Math.round(Mth.nextInt(new Random(), -120, 120) + entityiterator.getZ()),

@@ -23,7 +23,7 @@ import net.minecraft.commands.CommandSource;
 
 import net.mcreator.server.world.inventory.SellguiMenu;
 import net.mcreator.server.world.inventory.BuyguiMenu;
-import net.mcreator.server.network.ServerModVariables;
+import net.mcreator.server.network.ServerV5ModVariables;
 
 import io.netty.buffer.Unpooled;
 
@@ -33,21 +33,21 @@ public class SellOnBlockRightClickedProcedure {
 			return;
 		{
 			double _setval = x;
-			entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+			entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.x = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		{
 			double _setval = y;
-			entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+			entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.y = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		{
 			double _setval = z;
-			entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+			entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.z = _setval;
 				capability.syncPlayerVariables(entity);
 			});

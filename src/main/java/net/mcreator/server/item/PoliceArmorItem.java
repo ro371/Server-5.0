@@ -42,7 +42,7 @@ public abstract class PoliceArmorItem extends ArmorItem {
 
 			@Override
 			public SoundEvent getEquipSound() {
-				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server:policia_en_accion"));
+				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server_v5:policia_en_accion"));
 			}
 
 			@Override
@@ -74,7 +74,7 @@ public abstract class PoliceArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "server:textures/models/armor/police_layer_1.png";
+			return "server_v5:textures/models/armor/police_layer_1.png";
 		}
 
 		@Override
@@ -90,7 +90,7 @@ public abstract class PoliceArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "server:textures/models/armor/police_layer_1.png";
+			return "server_v5:textures/models/armor/police_layer_1.png";
 		}
 
 		@Override
@@ -106,7 +106,7 @@ public abstract class PoliceArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "server:textures/models/armor/police_layer_2.png";
+			return "server_v5:textures/models/armor/police_layer_2.png";
 		}
 	}
 
@@ -117,7 +117,7 @@ public abstract class PoliceArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "server:textures/models/armor/police_layer_1.png";
+			return "server_v5:textures/models/armor/police_layer_1.png";
 		}
 
 		@Override

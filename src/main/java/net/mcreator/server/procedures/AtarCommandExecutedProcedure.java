@@ -9,7 +9,7 @@ import net.minecraft.network.chat.TextComponent;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
-import net.mcreator.server.network.ServerModVariables;
+import net.mcreator.server.network.ServerV5ModVariables;
 
 import java.util.HashMap;
 
@@ -17,8 +17,8 @@ public class AtarCommandExecutedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, HashMap cmdparams) {
 		if (entity == null || cmdparams == null)
 			return;
-		if ((entity.getDisplayName().getString()).equals(ServerModVariables.MapVariables.get(world).police1)
-				|| (entity.getDisplayName().getString()).equals(ServerModVariables.MapVariables.get(world).police2)) {
+		if ((entity.getDisplayName().getString()).equals(ServerV5ModVariables.MapVariables.get(world).police1)
+				|| (entity.getDisplayName().getString()).equals(ServerV5ModVariables.MapVariables.get(world).police2)) {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performCommand(
 						new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""),

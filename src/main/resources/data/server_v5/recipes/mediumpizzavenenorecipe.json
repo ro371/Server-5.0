@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "server_v5:poisondrops"
+    },
+    {
+      "item": "server_v5:medium_pizza"
+    },
+    {
+      "item": "server_v5:poisondrops"
+    }
+  ],
+  "result": {
+    "item": "server_v5:medium_pizza_veneno",
+    "count": 1
+  }
+}

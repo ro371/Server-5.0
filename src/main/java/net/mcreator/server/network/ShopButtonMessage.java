@@ -14,7 +14,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.server.world.inventory.ShopMenu;
 import net.mcreator.server.procedures.PreviousProcedure;
 import net.mcreator.server.procedures.NextProcedure;
-import net.mcreator.server.ServerMod;
+import net.mcreator.server.ServerV5Mod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
@@ -75,6 +75,6 @@ public class ShopButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ServerMod.addNetworkMessage(ShopButtonMessage.class, ShopButtonMessage::buffer, ShopButtonMessage::new, ShopButtonMessage::handler);
+		ServerV5Mod.addNetworkMessage(ShopButtonMessage.class, ShopButtonMessage::buffer, ShopButtonMessage::new, ShopButtonMessage::handler);
 	}
 }

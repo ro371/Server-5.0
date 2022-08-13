@@ -12,8 +12,8 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.server.network.ServerModVariables;
-import net.mcreator.server.init.ServerModBlocks;
+import net.mcreator.server.network.ServerV5ModVariables;
+import net.mcreator.server.init.ServerV5ModBlocks;
 
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -22,7 +22,7 @@ public class BreakshopProcedure {
 		if (entity == null)
 			return;
 		if (world instanceof Level _level && !_level.isClientSide()) {
-			ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ServerModBlocks.SELL.get()));
+			ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ServerV5ModBlocks.SELL.get()));
 			entityToSpawn.setPickUpDelay(10);
 			_level.addFreshEntity(entityToSpawn);
 		}
@@ -99,7 +99,7 @@ public class BreakshopProcedure {
 		world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 		{
 			boolean _setval = false;
-			entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+			entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.guishopopen = _setval;
 				capability.syncPlayerVariables(entity);
 			});

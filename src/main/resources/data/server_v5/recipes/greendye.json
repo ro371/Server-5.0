@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1"
+  ],
+  "key": {
+    "0": {
+      "item": "server_v5:poison_dropitem"
+    },
+    "1": {
+      "item": "minecraft:sand"
+    }
+  },
+  "result": {
+    "item": "minecraft:green_dye",
+    "count": 1
+  }
+}

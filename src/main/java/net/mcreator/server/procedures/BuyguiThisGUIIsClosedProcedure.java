@@ -5,7 +5,7 @@ import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 
-import net.mcreator.server.network.ServerModVariables;
+import net.mcreator.server.network.ServerV5ModVariables;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -24,7 +24,7 @@ public class BuyguiThisGUIIsClosedProcedure {
 		}
 		{
 			boolean _setval = false;
-			entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+			entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.guishopopen = _setval;
 				capability.syncPlayerVariables(entity);
 			});

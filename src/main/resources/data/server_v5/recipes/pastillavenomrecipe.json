@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "server_v5:poison_dropitem"
+    },
+    {
+      "item": "server_v5:pastilla"
+    },
+    {
+      "item": "minecraft:lime_dye"
+    }
+  ],
+  "result": {
+    "item": "server_v5:pastilla_venom",
+    "count": 1
+  }
+}

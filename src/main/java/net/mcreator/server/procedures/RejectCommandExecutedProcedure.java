@@ -8,11 +8,11 @@ import net.minecraft.network.chat.TextComponent;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
-import net.mcreator.server.network.ServerModVariables;
+import net.mcreator.server.network.ServerV5ModVariables;
 
 public class RejectCommandExecutedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if ((ServerModVariables.MapVariables.get(world).nameproposal).equals("")) {
+		if ((ServerV5ModVariables.MapVariables.get(world).nameproposal).equals("")) {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4,
 						"", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(), "tell @p Nadie te ha propuesto matrimonio :(");
@@ -21,14 +21,14 @@ public class RejectCommandExecutedProcedure {
 				_level.getServer().getCommands().performCommand(
 						new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""),
 								_level.getServer(), null).withSuppressedOutput(),
-						("tell " + (ServerModVariables.MapVariables.get(world).nameproposal + " Tu propuesta ha sido rechazada :(")));
+						("tell " + (ServerV5ModVariables.MapVariables.get(world).nameproposal + " Tu propuesta ha sido rechazada :(")));
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performCommand(
 						new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""),
 								_level.getServer(), null).withSuppressedOutput(),
-						("give " + (ServerModVariables.MapVariables.get(world).nameproposal + " minecraft:diamond 10")));
-			ServerModVariables.MapVariables.get(world).nameproposal = "";
-			ServerModVariables.MapVariables.get(world).syncData(world);
+						("give " + (ServerV5ModVariables.MapVariables.get(world).nameproposal + " minecraft:diamond 10")));
+			ServerV5ModVariables.MapVariables.get(world).nameproposal = "";
+			ServerV5ModVariables.MapVariables.get(world).syncData(world);
 		}
 	}
 }

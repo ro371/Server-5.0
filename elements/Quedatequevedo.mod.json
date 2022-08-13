@@ -1,0 +1,17 @@
+{
+  "_fv": 28,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "quedate_bzrp",
+    "name": "Quédate",
+    "description": "Quevedo&BZRP",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:quevedo_quedate"
+    },
+    "specialInfo": [],
+    "hasGlow": false
+  }
+}

@@ -7,13 +7,13 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.server.ServerMod;
+import net.mcreator.server.ServerV5Mod;
 
 public class EarthmineBlockIsPlacedByProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		ServerMod.LOGGER.info((x + "" + (";" + (y + "" + (";" + (z + "" + (" by " + entity.getDisplayName().getString())))))));
+		ServerV5Mod.LOGGER.info((x + "" + (";" + (y + "" + (";" + (z + "" + (" by " + entity.getDisplayName().getString())))))));
 		if (!world.isClientSide()) {
 			BlockPos _bp = new BlockPos(x, y, z);
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);

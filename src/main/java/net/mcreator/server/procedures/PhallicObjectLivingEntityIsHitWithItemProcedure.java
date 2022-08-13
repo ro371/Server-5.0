@@ -17,7 +17,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.server.init.ServerModItems;
+import net.mcreator.server.init.ServerV5ModItems;
 
 public class PhallicObjectLivingEntityIsHitWithItemProcedure {
 	public static void execute(LevelAccessor world, Entity entity, Entity sourceentity) {
@@ -26,19 +26,19 @@ public class PhallicObjectLivingEntityIsHitWithItemProcedure {
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
 				_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server:gemido")), SoundSource.NEUTRAL, 1, 1);
+						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server_v5:gemido")), SoundSource.NEUTRAL, 1, 1);
 			} else {
 				_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server:gemido")), SoundSource.NEUTRAL, 1, 1, false);
+						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server_v5:gemido")), SoundSource.NEUTRAL, 1, 1, false);
 			}
 		}
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
 				_level.playSound(null, new BlockPos(sourceentity.getX(), sourceentity.getY(), sourceentity.getZ()),
-						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server:gemido")), SoundSource.NEUTRAL, 1, 1);
+						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server_v5:gemido")), SoundSource.NEUTRAL, 1, 1);
 			} else {
 				_level.playLocalSound((sourceentity.getX()), (sourceentity.getY()), (sourceentity.getZ()),
-						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server:gemido")), SoundSource.NEUTRAL, 1, 1, false);
+						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server_v5:gemido")), SoundSource.NEUTRAL, 1, 1, false);
 			}
 		}
 		if (entity instanceof LivingEntity _entity)
@@ -47,7 +47,7 @@ public class PhallicObjectLivingEntityIsHitWithItemProcedure {
 			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 100, 2));
 		if (Math.random() < 0.15) {
 			if (sourceentity instanceof Player _player) {
-				ItemStack _stktoremove = new ItemStack(ServerModItems.PHALLIC_OBJECT.get());
+				ItemStack _stktoremove = new ItemStack(ServerV5ModItems.PHALLIC_OBJECT.get());
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
 						_player.inventoryMenu.getCraftSlots());
 			}
@@ -76,19 +76,19 @@ public class PhallicObjectLivingEntityIsHitWithItemProcedure {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server:gemido")), SoundSource.NEUTRAL, 1, 1);
+								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server_v5:gemido")), SoundSource.NEUTRAL, 1, 1);
 					} else {
 						_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server:gemido")), SoundSource.NEUTRAL, 1, 1, false);
+								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server_v5:gemido")), SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, new BlockPos(sourceentity.getX(), sourceentity.getY(), sourceentity.getZ()),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server:gemido")), SoundSource.NEUTRAL, 1, 1);
+								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server_v5:gemido")), SoundSource.NEUTRAL, 1, 1);
 					} else {
 						_level.playLocalSound((sourceentity.getX()), (sourceentity.getY()), (sourceentity.getZ()),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server:gemido")), SoundSource.NEUTRAL, 1, 1, false);
+								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server_v5:gemido")), SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
 				MinecraftForge.EVENT_BUS.unregister(this);

@@ -72,7 +72,7 @@ public abstract class PresoArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "server:textures/models/armor/preso_layer_1.png";
+			return "server_v5:textures/models/armor/preso_layer_1.png";
 		}
 	}
 
@@ -83,7 +83,7 @@ public abstract class PresoArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "server:textures/models/armor/preso_layer_1.png";
+			return "server_v5:textures/models/armor/preso_layer_1.png";
 		}
 
 		@Override
@@ -99,7 +99,7 @@ public abstract class PresoArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "server:textures/models/armor/preso_layer_2.png";
+			return "server_v5:textures/models/armor/preso_layer_2.png";
 		}
 	}
 
@@ -110,7 +110,7 @@ public abstract class PresoArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "server:textures/models/armor/preso_layer_1.png";
+			return "server_v5:textures/models/armor/preso_layer_1.png";
 		}
 
 		@Override

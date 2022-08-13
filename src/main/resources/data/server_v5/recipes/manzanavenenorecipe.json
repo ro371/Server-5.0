@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "server_v5:poison_dropitem"
+    },
+    {
+      "item": "minecraft:apple"
+    },
+    {
+      "item": "server_v5:poison_dropitem"
+    }
+  ],
+  "result": {
+    "item": "server_v5:manzana_veneno",
+    "count": 1
+  }
+}

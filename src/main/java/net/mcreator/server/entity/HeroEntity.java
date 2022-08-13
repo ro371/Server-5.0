@@ -33,13 +33,13 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
 import net.mcreator.server.procedures.AppearProcedure;
-import net.mcreator.server.init.ServerModEntities;
+import net.mcreator.server.init.ServerV5ModEntities;
 
 import javax.annotation.Nullable;
 
 public class HeroEntity extends PathfinderMob {
 	public HeroEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(ServerModEntities.HERO.get(), world);
+		this(ServerV5ModEntities.HERO.get(), world);
 	}
 
 	public HeroEntity(EntityType<HeroEntity> type, Level world) {

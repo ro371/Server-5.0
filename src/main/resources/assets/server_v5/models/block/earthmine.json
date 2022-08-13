@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "server_v5:blocks/dirt",
+    "up": "server_v5:blocks/dirt",
+    "north": "server_v5:blocks/dirt",
+    "east": "server_v5:blocks/dirt",
+    "south": "server_v5:blocks/dirt",
+    "west": "server_v5:blocks/dirt",
+    "particle": "server_v5:blocks/dirt"
+  }
+}

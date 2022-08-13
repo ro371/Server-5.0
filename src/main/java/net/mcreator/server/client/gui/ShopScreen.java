@@ -15,7 +15,7 @@ import net.mcreator.server.world.inventory.ShopMenu;
 import net.mcreator.server.procedures.ShowpreviousProcedure;
 import net.mcreator.server.procedures.ShownextProcedure;
 import net.mcreator.server.network.ShopButtonMessage;
-import net.mcreator.server.ServerMod;
+import net.mcreator.server.ServerV5Mod;
 
 import java.util.HashMap;
 
@@ -39,7 +39,7 @@ public class ShopScreen extends AbstractContainerScreen<ShopMenu> {
 		this.imageHeight = 201;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("server:textures/shop.png");
+	private static final ResourceLocation texture = new ResourceLocation("server_v5:textures/shop.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -56,34 +56,34 @@ public class ShopScreen extends AbstractContainerScreen<ShopMenu> {
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("server:textures/arrow.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("server_v5:textures/arrow.png"));
 		this.blit(ms, this.leftPos + 38, this.topPos + 15, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("server:textures/shoptext.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("server_v5:textures/shoptext.png"));
 		this.blit(ms, this.leftPos + 136, this.topPos + 10, 0, 0, 64, 32, 64, 32);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("server:textures/arrow.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("server_v5:textures/arrow.png"));
 		this.blit(ms, this.leftPos + 37, this.topPos + 42, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("server:textures/arrow.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("server_v5:textures/arrow.png"));
 		this.blit(ms, this.leftPos + 37, this.topPos + 69, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("server:textures/arrow.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("server_v5:textures/arrow.png"));
 		this.blit(ms, this.leftPos + 37, this.topPos + 96, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("server:textures/arrow.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("server_v5:textures/arrow.png"));
 		this.blit(ms, this.leftPos + 37, this.topPos + 124, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("server:textures/arrow.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("server_v5:textures/arrow.png"));
 		this.blit(ms, this.leftPos + 37, this.topPos + 150, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("server:textures/arrow.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("server_v5:textures/arrow.png"));
 		this.blit(ms, this.leftPos + 37, this.topPos + 177, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("server:textures/arrow.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("server_v5:textures/arrow.png"));
 		this.blit(ms, this.leftPos + 280, this.topPos + 16, 0, 0, 16, 16, 16, 16);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("server:textures/arrow.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("server_v5:textures/arrow.png"));
 		this.blit(ms, this.leftPos + 280, this.topPos + 42, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
@@ -119,7 +119,7 @@ public class ShopScreen extends AbstractContainerScreen<ShopMenu> {
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 		this.addRenderableWidget(new Button(this.leftPos + 213, this.topPos + 15, 35, 20, new TextComponent("->"), e -> {
 			if (ShownextProcedure.execute(entity)) {
-				ServerMod.PACKET_HANDLER.sendToServer(new ShopButtonMessage(0, x, y, z));
+				ServerV5Mod.PACKET_HANDLER.sendToServer(new ShopButtonMessage(0, x, y, z));
 				ShopButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}) {
@@ -131,7 +131,7 @@ public class ShopScreen extends AbstractContainerScreen<ShopMenu> {
 		});
 		this.addRenderableWidget(new Button(this.leftPos + 87, this.topPos + 15, 35, 20, new TextComponent("<-"), e -> {
 			if (ShowpreviousProcedure.execute(entity)) {
-				ServerMod.PACKET_HANDLER.sendToServer(new ShopButtonMessage(1, x, y, z));
+				ServerV5Mod.PACKET_HANDLER.sendToServer(new ShopButtonMessage(1, x, y, z));
 				ShopButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		}) {

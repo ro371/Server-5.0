@@ -1,0 +1,131 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Barril",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Barril",
+          "x": 195,
+          "y": 44
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 150,
+          "y": 62
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 204,
+          "y": 62
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 258,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:tiempo1> s",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Inserted1"
+          },
+          "name": "<VAR:integer:tiempo1> s",
+          "x": 141,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:tiempo2> s",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Inserted2"
+          },
+          "name": "<VAR:integer:tiempo2> s",
+          "x": 195,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:tiempo3> s",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "Inserted3"
+          },
+          "name": "<VAR:integer:tiempo3> s",
+          "x": 258,
+          "y": 89
+        }
+      }
+    ],
+    "onOpen": {
+      "name": "BarrilGUIThisGUIIsOpened"
+    },
+    "onClosed": {
+      "name": "BarrilGUIThisGUIIsClosed"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

@@ -23,8 +23,8 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.server.procedures.BankWhileThisGUIIsOpenTickProcedure;
 import net.mcreator.server.procedures.BankThisGUIIsClosedProcedure;
-import net.mcreator.server.init.ServerModMenus;
-import net.mcreator.server.init.ServerModItems;
+import net.mcreator.server.init.ServerV5ModMenus;
+import net.mcreator.server.init.ServerV5ModItems;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -41,7 +41,7 @@ public class BankMenu extends AbstractContainerMenu implements Supplier<Map<Inte
 	private boolean bound = false;
 
 	public BankMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(ServerModMenus.BANK, id);
+		super(ServerV5ModMenus.BANK, id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
 		this.internal = new ItemStackHandler(4);
@@ -85,7 +85,7 @@ public class BankMenu extends AbstractContainerMenu implements Supplier<Map<Inte
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 8, 23) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (ServerModItems.COIN_1.get() == stack.getItem());
+				return (ServerV5ModItems.COIN_1.get() == stack.getItem());
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 61, 22) {
@@ -97,7 +97,7 @@ public class BankMenu extends AbstractContainerMenu implements Supplier<Map<Inte
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 7, 50) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return (ServerModItems.COIN_5.get() == stack.getItem());
+				return (ServerV5ModItems.COIN_5.get() == stack.getItem());
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 61, 51) {

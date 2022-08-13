@@ -1,0 +1,44 @@
+{
+  "criteria": {
+    "minitas": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "server_v5:mine"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1000
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 10,
+    "loot": [
+      "server_v5:entities/minerewards"
+    ],
+    "recipes": [
+      "server_v5:minecrafteo",
+      "server_v5:earthminecrafteo",
+      "server_v5:cobbleminecrafteo",
+      "server_v5:craftingminecrafteo",
+      "server_v5:sandminecrafteo",
+      "server_v5:oakminecrafteo",
+      "server_v5:planksminecrafteo",
+      "server_v5:quartzminecrafteo",
+      "server_v5:ironminecrafteo",
+      "server_v5:goldminecrafteo",
+      "server_v5:diamondminecrafteo",
+      "server_v5:stoneminecrafteo",
+      "server_v5:furnaceminecrafteo",
+      "server_v5:luparecipe",
+      "server_v5:deactivatorrecipe"
+    ]
+  },
+  "parent": "server_v5:the_witch"
+}

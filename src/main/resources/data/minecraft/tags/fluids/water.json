@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "server:aguacaliente",
-    "server:flowing_aguacaliente"
+    "server_v5:aguacaliente",
+    "server_v5:flowing_aguacaliente"
   ]
 }

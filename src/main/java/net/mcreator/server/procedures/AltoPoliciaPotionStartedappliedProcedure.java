@@ -27,10 +27,10 @@ public class AltoPoliciaPotionStartedappliedProcedure {
 			_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 400, 1, (false), (false)));
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server:alto_policia")),
+				_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server_v5:alto_policia")),
 						SoundSource.NEUTRAL, 100, 1);
 			} else {
-				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server:alto_policia")),
+				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server_v5:alto_policia")),
 						SoundSource.NEUTRAL, 100, 1, false);
 			}
 		}

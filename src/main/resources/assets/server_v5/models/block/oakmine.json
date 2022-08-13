@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "server_v5:blocks/oak_top",
+    "up": "server_v5:blocks/oak_top",
+    "north": "server_v5:blocks/oak_side",
+    "east": "server_v5:blocks/oak_side",
+    "south": "server_v5:blocks/oak_side",
+    "west": "server_v5:blocks/oak_side",
+    "particle": "server_v5:blocks/oak_top"
+  }
+}

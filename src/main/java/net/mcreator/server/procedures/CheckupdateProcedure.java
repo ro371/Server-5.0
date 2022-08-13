@@ -14,7 +14,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.server.network.ServerModVariables;
+import net.mcreator.server.network.ServerV5ModVariables;
 
 import java.util.function.Supplier;
 import java.util.concurrent.atomic.AtomicReference;
@@ -44,12 +44,12 @@ public class CheckupdateProcedure {
 						}
 					}.getItemStack(world,
 							new BlockPos(
-									(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new ServerModVariables.PlayerVariables())).x,
-									(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new ServerModVariables.PlayerVariables())).y,
-									(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new ServerModVariables.PlayerVariables())).z),
+									(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+											.orElse(new ServerV5ModVariables.PlayerVariables())).x,
+									(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+											.orElse(new ServerV5ModVariables.PlayerVariables())).y,
+									(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+											.orElse(new ServerV5ModVariables.PlayerVariables())).z),
 							3)).getItem() == itemstackiterator.getItem()) {
 						count = count + (itemstackiterator).getCount();
 					}
@@ -66,9 +66,9 @@ public class CheckupdateProcedure {
 				return _retval.get();
 			}
 		}.getAmount(world, new BlockPos(
-				(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ServerModVariables.PlayerVariables())).x,
-				(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ServerModVariables.PlayerVariables())).y,
-				(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ServerModVariables.PlayerVariables())).z),
+				(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ServerV5ModVariables.PlayerVariables())).x,
+				(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ServerV5ModVariables.PlayerVariables())).y,
+				(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ServerV5ModVariables.PlayerVariables())).z),
 				2)) {
 			if (new Object() {
 				public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
@@ -79,10 +79,14 @@ public class CheckupdateProcedure {
 								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 					return _retval.get();
 				}
-			}.getAmount(world, new BlockPos(
-					(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ServerModVariables.PlayerVariables())).x,
-					(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ServerModVariables.PlayerVariables())).y,
-					(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ServerModVariables.PlayerVariables())).z),
+			}.getAmount(world,
+					new BlockPos(
+							(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+									.orElse(new ServerV5ModVariables.PlayerVariables())).x,
+							(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+									.orElse(new ServerV5ModVariables.PlayerVariables())).y,
+							(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+									.orElse(new ServerV5ModVariables.PlayerVariables())).z),
 					1) <= new Object() {
 						public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 							AtomicInteger _retval = new AtomicInteger(0);
@@ -94,12 +98,12 @@ public class CheckupdateProcedure {
 						}
 					}.getAmount(world,
 							new BlockPos(
-									(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new ServerModVariables.PlayerVariables())).x,
-									(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new ServerModVariables.PlayerVariables())).y,
-									(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-											.orElse(new ServerModVariables.PlayerVariables())).z),
+									(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+											.orElse(new ServerV5ModVariables.PlayerVariables())).x,
+									(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+											.orElse(new ServerV5ModVariables.PlayerVariables())).y,
+									(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+											.orElse(new ServerV5ModVariables.PlayerVariables())).z),
 							0)) {
 				if (64 - new Object() {
 					public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
@@ -112,12 +116,12 @@ public class CheckupdateProcedure {
 					}
 				}.getAmount(world,
 						new BlockPos(
-								(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new ServerModVariables.PlayerVariables())).x,
-								(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new ServerModVariables.PlayerVariables())).y,
-								(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new ServerModVariables.PlayerVariables())).z),
+								(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new ServerV5ModVariables.PlayerVariables())).x,
+								(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new ServerV5ModVariables.PlayerVariables())).y,
+								(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+										.orElse(new ServerV5ModVariables.PlayerVariables())).z),
 						4) >= new Object() {
 							public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
 								AtomicInteger _retval = new AtomicInteger(0);
@@ -129,12 +133,12 @@ public class CheckupdateProcedure {
 							}
 						}.getAmount(world,
 								new BlockPos(
-										(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-												.orElse(new ServerModVariables.PlayerVariables())).x,
-										(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-												.orElse(new ServerModVariables.PlayerVariables())).y,
-										(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-												.orElse(new ServerModVariables.PlayerVariables())).z),
+										(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+												.orElse(new ServerV5ModVariables.PlayerVariables())).x,
+										(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+												.orElse(new ServerV5ModVariables.PlayerVariables())).y,
+										(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+												.orElse(new ServerV5ModVariables.PlayerVariables())).z),
 								2)) {
 					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 							&& _current.get() instanceof Map _slots) {
@@ -149,12 +153,12 @@ public class CheckupdateProcedure {
 							}
 						}.getItemStack(world,
 								new BlockPos(
-										(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-												.orElse(new ServerModVariables.PlayerVariables())).x,
-										(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-												.orElse(new ServerModVariables.PlayerVariables())).y,
-										(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-												.orElse(new ServerModVariables.PlayerVariables())).z),
+										(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+												.orElse(new ServerV5ModVariables.PlayerVariables())).x,
+										(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+												.orElse(new ServerV5ModVariables.PlayerVariables())).y,
+										(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+												.orElse(new ServerV5ModVariables.PlayerVariables())).z),
 								0));
 						_setstack.setCount(new Object() {
 							public int getAmount(LevelAccessor world, BlockPos pos, int slotid) {
@@ -167,12 +171,12 @@ public class CheckupdateProcedure {
 							}
 						}.getAmount(world,
 								new BlockPos(
-										(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-												.orElse(new ServerModVariables.PlayerVariables())).x,
-										(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-												.orElse(new ServerModVariables.PlayerVariables())).y,
-										(entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-												.orElse(new ServerModVariables.PlayerVariables())).z),
+										(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+												.orElse(new ServerV5ModVariables.PlayerVariables())).x,
+										(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+												.orElse(new ServerV5ModVariables.PlayerVariables())).y,
+										(entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+												.orElse(new ServerV5ModVariables.PlayerVariables())).z),
 								1));
 						((Slot) _slots.get(5)).set(_setstack);
 						_player.containerMenu.broadcastChanges();
@@ -219,8 +223,8 @@ public class CheckupdateProcedure {
 			}
 
 			private void run() {
-				if ((entity.getCapability(ServerModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ServerModVariables.PlayerVariables())).guishopopen == true) {
+				if ((entity.getCapability(ServerV5ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new ServerV5ModVariables.PlayerVariables())).guishopopen == true) {
 					CheckupdateProcedure.execute(world, entity);
 				}
 				MinecraftForge.EVENT_BUS.unregister(this);

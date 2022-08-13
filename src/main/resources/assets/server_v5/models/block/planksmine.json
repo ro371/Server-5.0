@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "server_v5:blocks/tablones_roble",
+    "up": "server_v5:blocks/tablones_roble",
+    "north": "server_v5:blocks/tablones_roble",
+    "east": "server_v5:blocks/tablones_roble",
+    "south": "server_v5:blocks/tablones_roble",
+    "west": "server_v5:blocks/tablones_roble",
+    "particle": "server_v5:blocks/tablones_roble"
+  }
+}

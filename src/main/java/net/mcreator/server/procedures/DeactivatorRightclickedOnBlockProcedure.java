@@ -11,7 +11,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.server.init.ServerModItems;
+import net.mcreator.server.init.ServerV5ModItems;
 
 import java.util.Random;
 
@@ -27,7 +27,7 @@ public class DeactivatorRightclickedOnBlockProcedure {
 				return "";
 			}
 		}.getValue(world, new BlockPos(x, y, z), "mineowner"))) {
-			if (ServerModItems.DEACTIVATOR.get() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+			if (ServerV5ModItems.DEACTIVATOR.get() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
 					.getItem()) {
 				{
 					ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
@@ -39,7 +39,7 @@ public class DeactivatorRightclickedOnBlockProcedure {
 			}
 			world.destroyBlock(new BlockPos(x, y, z), false);
 			if (world instanceof Level _level && !_level.isClientSide()) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ServerModItems.MINE.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ServerV5ModItems.MINE.get()));
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}

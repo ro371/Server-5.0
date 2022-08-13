@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "server:earthmine",
-    "server:sandmine"
+    "server_v5:earthmine",
+    "server_v5:sandmine"
   ]
 }

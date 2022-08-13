@@ -13,7 +13,7 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.server.world.inventory.SellguiMenu;
 import net.mcreator.server.network.SellguiButtonMessage;
-import net.mcreator.server.ServerMod;
+import net.mcreator.server.ServerV5Mod;
 
 import java.util.HashMap;
 
@@ -37,7 +37,7 @@ public class SellguiScreen extends AbstractContainerScreen<SellguiMenu> {
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("server:textures/sellgui.png");
+	private static final ResourceLocation texture = new ResourceLocation("server_v5:textures/sellgui.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -90,7 +90,7 @@ public class SellguiScreen extends AbstractContainerScreen<SellguiMenu> {
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 		this.addRenderableWidget(new Button(this.leftPos + 74, this.topPos + 58, 90, 20, new TextComponent("Quitar Tienda"), e -> {
 			if (true) {
-				ServerMod.PACKET_HANDLER.sendToServer(new SellguiButtonMessage(0, x, y, z));
+				ServerV5Mod.PACKET_HANDLER.sendToServer(new SellguiButtonMessage(0, x, y, z));
 				SellguiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}));

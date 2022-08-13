@@ -1,0 +1,30 @@
+{
+  "group": "minas",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    " 45",
+    "6  "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:glass"
+    },
+    "2": {
+      "item": "minecraft:glass"
+    },
+    "4": {
+      "item": "minecraft:glass"
+    },
+    "5": {
+      "item": "minecraft:glass"
+    },
+    "6": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "server_v5:deactivator",
+    "count": 1
+  }
+}

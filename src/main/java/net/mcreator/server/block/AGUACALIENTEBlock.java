@@ -14,11 +14,11 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.server.procedures.AguaCalienteMobplayerCollidesBlockProcedure;
-import net.mcreator.server.init.ServerModFluids;
+import net.mcreator.server.init.ServerV5ModFluids;
 
 public class AGUACALIENTEBlock extends LiquidBlock {
 	public AGUACALIENTEBlock() {
-		super(() -> (FlowingFluid) ServerModFluids.AGUACALIENTE.get(), BlockBehaviour.Properties.of(Material.WATER).strength(100f)
+		super(() -> (FlowingFluid) ServerV5ModFluids.AGUACALIENTE.get(), BlockBehaviour.Properties.of(Material.WATER).strength(100f)
 				.hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).lightLevel(s -> 5));
 	}
 

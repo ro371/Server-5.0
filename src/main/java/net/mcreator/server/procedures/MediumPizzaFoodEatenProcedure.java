@@ -28,11 +28,11 @@ public class MediumPizzaFoodEatenProcedure {
 			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 450, 0, (true), (false)));
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server:yummy")),
+				_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server_v5:yummy")),
 						SoundSource.NEUTRAL, 100, 1);
 			} else {
-				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server:yummy")), SoundSource.NEUTRAL, 100,
-						1, false);
+				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("server_v5:yummy")), SoundSource.NEUTRAL,
+						100, 1, false);
 			}
 		}
 	}

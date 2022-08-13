@@ -27,7 +27,7 @@ import net.minecraft.network.chat.ChatType;
 import net.minecraft.core.BlockPos;
 import net.minecraft.Util;
 
-import net.mcreator.server.network.ServerModVariables;
+import net.mcreator.server.network.ServerV5ModVariables;
 import net.mcreator.server.entity.HeroEntity;
 
 import java.util.Random;
@@ -41,13 +41,13 @@ public class AppearProcedure {
 		if (!world.isClientSide()) {
 			MinecraftServer _mcserv = ServerLifecycleHooks.getCurrentServer();
 			if (_mcserv != null)
-				_mcserv.getPlayerList().broadcastMessage(new TextComponent(ServerModVariables.MapVariables.get(world).HeroTarget), ChatType.SYSTEM,
+				_mcserv.getPlayerList().broadcastMessage(new TextComponent(ServerV5ModVariables.MapVariables.get(world).HeroTarget), ChatType.SYSTEM,
 						Util.NIL_UUID);
 		}
 		{
 			List<? extends Player> _players = new ArrayList<>(world.players());
 			for (Entity entityiterator : _players) {
-				if ((entityiterator.getDisplayName().getString()).equals(ServerModVariables.MapVariables.get(world).HeroTarget)) {
+				if ((entityiterator.getDisplayName().getString()).equals(ServerV5ModVariables.MapVariables.get(world).HeroTarget)) {
 					new Object() {
 						private int ticks = 0;
 						private float waitTicks;

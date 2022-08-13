@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "server_v5:blocks/uva_main",
+    "particle": "server_v5:blocks/uva_main"
+  }
+}
