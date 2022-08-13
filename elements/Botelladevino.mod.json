@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "botella_de_vino",
     "customModelName": "Normal",
-    "name": "Botella de mosto",
+    "name": "Botella de vino",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MISC"
@@ -29,6 +29,12 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "BotellademostoRightclicked"
+    },
+    "onFinishUsingItem": {
+      "name": "BotelladevinoPlayerFinishesUsingItem"
+    },
     "hasDispenseBehavior": false,
     "isFood": true,
     "nutritionalValue": 4,

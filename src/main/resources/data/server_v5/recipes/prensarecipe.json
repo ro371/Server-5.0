@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "tag": "minecraft:planks"
+    },
+    "2": {
+      "tag": "minecraft:planks"
+    },
+    "3": {
+      "item": "minecraft:oak_log"
+    },
+    "4": {
+      "item": "minecraft:oak_log"
+    },
+    "5": {
+      "item": "minecraft:oak_log"
+    }
+  },
+  "result": {
+    "item": "server_v5:prensa",
+    "count": 1
+  }
+}
